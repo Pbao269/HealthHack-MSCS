@@ -121,7 +121,7 @@ jobs:
         python integrate_data.py
     
     - name: Upload expanded data
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: expanded-knowledge-base
         path: epi-risk-lite/app/engine/data/expanded_*.json
@@ -145,7 +145,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -e .
-        pip install safety bandit
+        pip install -e ".[dev]"
     
     - name: Run safety check
       run: safety check --json --output safety-report.json || true
@@ -154,7 +154,7 @@ jobs:
       run: bandit -r app/ -f json -o bandit-report.json || true
     
     - name: Upload security reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: security-reports
         path: |
