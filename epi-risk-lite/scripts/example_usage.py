@@ -13,7 +13,6 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 
 from app.engine.scorer import RiskScorer
-from app.engine.data import load_expanded_knowledge_base
 
 def load_expanded_knowledge_base():
     """Load the expanded knowledge base."""
