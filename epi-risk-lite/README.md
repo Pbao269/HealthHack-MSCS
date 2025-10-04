@@ -18,7 +18,9 @@ A clinical decision support tool that screens patient genomic data for harmful e
 docker-compose up --build
 ```
 
-The API will be available at `http://localhost:8000`
+The API will be available at `http://localhost:8000` (or `http://your-server-ip:8000`)
+
+**Hackathon Note**: CORS is enabled to allow requests from any domain!
 
 ### Local Development
 

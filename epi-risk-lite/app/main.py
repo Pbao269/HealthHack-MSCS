@@ -28,11 +28,11 @@ app = FastAPI(
     description=settings.api_description,
 )
 
-# Add CORS middleware (open for localhost)
+# Add CORS middleware (open for hackathon - any domain)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:*", "http://127.0.0.1:*"],
-    allow_credentials=True,
+    allow_origins=["*"],  # Allow all origins for hackathon
+    allow_credentials=False,  # Must be False when allow_origins=["*"]
     allow_methods=["*"],
     allow_headers=["*"],
 )

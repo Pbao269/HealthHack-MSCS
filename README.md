@@ -51,6 +51,49 @@ uvicorn app.main:app --reload
 - Docker (optional)
 - Git
 
+### 🏆 **Hackathon Usage**
+This API is configured for hackathon use with:
+- **CORS enabled** - Accepts requests from any domain
+- **No authentication** - Ready for immediate use
+- **RESTful API** - Easy integration with any frontend
+- **Swagger UI** - Interactive API documentation
+
+#### **Frontend Integration Example**
+```javascript
+// JavaScript/React example
+const API_BASE = 'http://your-server-ip:8000';
+
+// Score genetic variants
+async function scoreVariants(variants, medication) {
+  const response = await fetch(`${API_BASE}/v1/score`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      variants: variants,
+      medication_name: medication
+    })
+  });
+  
+  return await response.json();
+}
+
+// Upload CSV file
+async function uploadFile(file, medication) {
+  const formData = new FormData();
+  formData.append('file', file);
+  formData.append('medication_name', medication);
+  
+  const response = await fetch(`${API_BASE}/v1/score-file`, {
+    method: 'POST',
+    body: formData
+  });
+  
+  return await response.json();
+}
+```
+
 ### Installation
 
 1. **Clone the repository**:
@@ -71,8 +114,9 @@ uvicorn app.main:app --reload --port 8000
 ```
 
 4. **Access the API**:
-- Swagger UI: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
+- Swagger UI: http://localhost:8000/docs (or http://your-server-ip:8000/docs)
+- ReDoc: http://localhost:8000/redoc (or http://your-server-ip:8000/redoc)
+- **Hackathon Note**: API accepts requests from any domain (CORS enabled)
 
 ### Docker Deployment
 
@@ -137,7 +181,8 @@ cd epi-risk-lite
 
 - [Epi-Risk Lite Documentation](epi-risk-lite/README.md)
 - [Data Expansion Guide](epi-risk-lite/scripts/README.md)
-- [API Documentation](http://localhost:8000/docs) (when running)
+- [API Documentation](http://localhost:8000/docs) (when running locally)
+- **Hackathon**: API accessible from any domain with CORS enabled
 - [Project Summary](epi-risk-lite/PROJECT_SUMMARY.md)
 
 ## 🤝 **Contributing**
