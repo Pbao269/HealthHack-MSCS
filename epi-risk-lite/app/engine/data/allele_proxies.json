@@ -1,0 +1,25 @@
+{
+  "rs3892097:AA": "CYP2D6_loss",
+  "rs3892097:AG": "CYP2D6_reduced",
+  "rs1065852:GG": "CYP2D6_loss",
+  "rs1065852:AG": "CYP2D6_reduced",
+  "rs776746:TT": "CYP3A4_rs776746_TT",
+  "rs776746:CT": "CYP3A4_reduced",
+  "rs4244285:AA": "CYP2C19_loss",
+  "rs4244285:AG": "CYP2C19_reduced",
+  "rs12248560:CC": "CYP2C19_ultrarapid",
+  "rs12248560:CT": "CYP2C19_rapid",
+  "rs1045642:TT": "ABCB1_reduced_function",
+  "rs1045642:CT": "ABCB1_intermediate",
+  "rs4149056:TT": "SLCO1B1_reduced",
+  "rs4149056:CT": "SLCO1B1_intermediate",
+  "rs9923231:AA": "VKORC1_low_dose",
+  "rs9923231:AG": "VKORC1_intermediate_dose",
+  "rs1799853:CT": "CYP2C9_reduced",
+  "rs1799853:TT": "CYP2C9_loss",
+  "rs1057910:AC": "CYP2C9_reduced",
+  "rs1057910:CC": "CYP2C9_loss",
+  "rs28371725:CT": "CYP2C19_loss",
+  "rs28371725:TT": "CYP2C19_loss"
+}
+

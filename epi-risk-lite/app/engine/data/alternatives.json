@@ -1,0 +1,65 @@
+{
+  "codeine": [
+    {
+      "rxnorm": "7052",
+      "name": "morphine",
+      "note": "does not require CYP2D6 activation"
+    },
+    {
+      "rxnorm": "7804",
+      "name": "oxycodone",
+      "note": "metabolized primarily by CYP3A4"
+    }
+  ],
+  "clopidogrel": [
+    {
+      "rxnorm": "114979",
+      "name": "prasugrel",
+      "note": "less dependent on CYP2C19 for activation"
+    },
+    {
+      "rxnorm": "1116632",
+      "name": "ticagrelor",
+      "note": "not a prodrug, no CYP2C19 dependence"
+    }
+  ],
+  "warfarin": [
+    {
+      "rxnorm": "1037042",
+      "name": "apixaban",
+      "note": "direct factor Xa inhibitor, less genetic variability"
+    },
+    {
+      "rxnorm": "1114195",
+      "name": "rivaroxaban",
+      "note": "direct factor Xa inhibitor, predictable dosing"
+    }
+  ],
+  "simvastatin": [
+    {
+      "rxnorm": "36567",
+      "name": "atorvastatin",
+      "note": "less affected by SLCO1B1 variants"
+    },
+    {
+      "rxnorm": "83367",
+      "name": "rosuvastatin",
+      "note": "alternative metabolism pathway"
+    }
+  ],
+  "metoprolol": [
+    {
+      "rxnorm": "135447",
+      "name": "carvedilol",
+      "note": "metabolized by multiple pathways"
+    }
+  ],
+  "omeprazole": [
+    {
+      "rxnorm": "203676",
+      "name": "pantoprazole",
+      "note": "less CYP2C19 dependent"
+    }
+  ]
+}
+

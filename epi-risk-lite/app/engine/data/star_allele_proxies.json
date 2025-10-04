@@ -1,0 +1,24 @@
+{
+  "CYP2D6*1": "CYP2D6_normal",
+  "CYP2D6*2": "CYP2D6_normal",
+  "CYP2D6*3": "CYP2D6_loss",
+  "CYP2D6*4": "CYP2D6_loss",
+  "CYP2D6*5": "CYP2D6_loss",
+  "CYP2D6*6": "CYP2D6_loss",
+  "CYP2D6*10": "CYP2D6_reduced",
+  "CYP2D6*17": "CYP2D6_reduced",
+  "CYP2D6*41": "CYP2D6_reduced",
+  "CYP2C19*1": "CYP2C19_normal",
+  "CYP2C19*2": "CYP2C19_loss",
+  "CYP2C19*3": "CYP2C19_loss",
+  "CYP2C19*4": "CYP2C19_loss",
+  "CYP2C19*17": "CYP2C19_ultrarapid",
+  "CYP2C9*1": "CYP2C9_normal",
+  "CYP2C9*2": "CYP2C9_reduced",
+  "CYP2C9*3": "CYP2C9_reduced",
+  "CYP3A4*1": "CYP3A4_normal",
+  "CYP3A4*22": "CYP3A4_reduced",
+  "CYP3A5*1": "CYP3A5_normal",
+  "CYP3A5*3": "CYP3A5_loss"
+}
+

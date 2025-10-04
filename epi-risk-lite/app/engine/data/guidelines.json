@@ -1,0 +1,138 @@
+{
+  "epistasis_pairs": {
+    "CYP2D6_loss+CYP3A4_rs776746_TT": {
+      "weight": 0.45,
+      "evidence": [
+        "Combined CYP2D6 and CYP3A4 impairment severely reduces codeine activation",
+        "PharmGKB Level 1A: Poor metabolizers at high risk for treatment failure"
+      ],
+      "drugs": ["codeine"]
+    },
+    "CYP2D6_loss+CYP3A4_reduced": {
+      "weight": 0.35,
+      "evidence": [
+        "Dual pathway impairment increases risk of inadequate analgesia",
+        "Consider alternative opioid or dose adjustment"
+      ],
+      "drugs": ["codeine"]
+    },
+    "CYP2C19_loss+CYP3A4_reduced": {
+      "weight": 0.40,
+      "evidence": [
+        "Clopidogrel activation significantly impaired with dual enzyme deficiency",
+        "FDA boxed warning for poor CYP2C19 metabolizers"
+      ],
+      "drugs": ["clopidogrel"]
+    },
+    "CYP2C9_loss+VKORC1_low_dose": {
+      "weight": 0.50,
+      "evidence": [
+        "Warfarin sensitivity markedly increased; high bleeding risk",
+        "Requires substantial dose reduction per CPIC guidelines"
+      ],
+      "drugs": ["warfarin"]
+    },
+    "SLCO1B1_reduced+CYP3A4_reduced": {
+      "weight": 0.38,
+      "evidence": [
+        "Increased simvastatin exposure and myopathy risk",
+        "Consider lower dose or alternative statin"
+      ],
+      "drugs": ["simvastatin"]
+    }
+  },
+  "single_tags": {
+    "CYP2D6_loss": {
+      "weight": 0.30,
+      "evidence": [
+        "Complete loss of CYP2D6 function affects ~7% of Caucasians",
+        "Critical for codeine, tramadol, and many antidepressants"
+      ]
+    },
+    "CYP2D6_reduced": {
+      "weight": 0.15,
+      "evidence": [
+        "Intermediate metabolizer status",
+        "May require dose adjustment for CYP2D6 substrates"
+      ]
+    },
+    "CYP2C19_loss": {
+      "weight": 0.28,
+      "evidence": [
+        "Poor metabolizer phenotype for clopidogrel and PPIs",
+        "FDA boxed warning for clopidogrel in poor metabolizers"
+      ]
+    },
+    "CYP2C19_reduced": {
+      "weight": 0.14,
+      "evidence": [
+        "Intermediate metabolizer status",
+        "Reduced activation of prodrugs"
+      ]
+    },
+    "CYP2C19_ultrarapid": {
+      "weight": 0.10,
+      "evidence": [
+        "Increased metabolism may reduce efficacy of some drugs",
+        "May require higher doses of PPIs"
+      ]
+    },
+    "CYP3A4_rs776746_TT": {
+      "weight": 0.18,
+      "evidence": [
+        "Reduced CYP3A4 expression",
+        "Affects many commonly prescribed medications"
+      ]
+    },
+    "CYP3A4_reduced": {
+      "weight": 0.12,
+      "evidence": [
+        "Intermediate CYP3A4 function",
+        "Monitor for drug accumulation"
+      ]
+    },
+    "CYP2C9_loss": {
+      "weight": 0.32,
+      "evidence": [
+        "High warfarin sensitivity",
+        "Increased bleeding risk with standard dosing"
+      ]
+    },
+    "CYP2C9_reduced": {
+      "weight": 0.18,
+      "evidence": [
+        "Intermediate metabolizer for warfarin and NSAIDs",
+        "Dose reduction often required"
+      ]
+    },
+    "VKORC1_low_dose": {
+      "weight": 0.22,
+      "evidence": [
+        "Increased warfarin sensitivity",
+        "Requires lower maintenance dose"
+      ]
+    },
+    "SLCO1B1_reduced": {
+      "weight": 0.25,
+      "evidence": [
+        "Increased statin myopathy risk",
+        "CPIC recommendation: consider alternative or lower dose"
+      ]
+    },
+    "ABCB1_reduced_function": {
+      "weight": 0.10,
+      "evidence": [
+        "Altered drug transport",
+        "May affect bioavailability of many drugs"
+      ]
+    }
+  },
+  "pathway_burden": {
+    "weight": 0.20,
+    "evidence": [
+      "Multiple gene impairment in same pathway indicates higher risk",
+      "Redundancy loss increases susceptibility to adverse events"
+    ]
+  }
+}
+

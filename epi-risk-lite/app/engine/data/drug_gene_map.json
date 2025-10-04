@@ -1,0 +1,31 @@
+{
+  "rxnorm:1049630": {
+    "name": "codeine",
+    "genes": ["CYP2D6", "CYP3A4", "UGT2B7"]
+  },
+  "rxnorm:32968": {
+    "name": "clopidogrel",
+    "genes": ["CYP2C19", "CYP3A4", "ABCB1"]
+  },
+  "rxnorm:11289": {
+    "name": "warfarin",
+    "genes": ["CYP2C9", "VKORC1", "CYP4F2"]
+  },
+  "rxnorm:42331": {
+    "name": "simvastatin",
+    "genes": ["SLCO1B1", "CYP3A4", "CYP3A5", "ABCB1"]
+  },
+  "rxnorm:7052": {
+    "name": "morphine",
+    "genes": ["UGT2B7", "OPRM1"]
+  },
+  "rxnorm:6809": {
+    "name": "metoprolol",
+    "genes": ["CYP2D6", "ADRB1"]
+  },
+  "rxnorm:8123": {
+    "name": "omeprazole",
+    "genes": ["CYP2C19", "CYP3A4"]
+  }
+}
+
