@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 class FDACollector:
     """Collects data from FDA pharmacogenomic biomarkers table."""
     
-    def __init__(self, output_dir: Path = Path("../app/engine/data")):
+    def __init__(self, output_dir: Path = Path("epi-risk-lite/app/engine/data")):
         self.output_dir = output_dir
         self.session = requests.Session()
         self.session.headers.update({

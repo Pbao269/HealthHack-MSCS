@@ -17,7 +17,7 @@ from app.engine.data import load_expanded_knowledge_base
 
 def load_expanded_knowledge_base():
     """Load the expanded knowledge base."""
-    data_dir = Path(__file__).parent.parent / "app" / "engine" / "data"
+    data_dir = Path(__file__).parent.parent.parent / "epi-risk-lite" / "app" / "engine" / "data"
     
     # Try to load expanded data first
     expanded_file = data_dir / "expanded_knowledge_base.json"
