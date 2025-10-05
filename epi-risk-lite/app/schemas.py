@@ -56,6 +56,19 @@ class Alternative(BaseModel):
     rxnorm: str = Field(..., description="RxNorm code")
     name: str = Field(..., description="Medication name")
     note: str = Field(..., description="Reason for alternative")
+    risk_score: Optional[float] = Field(None, ge=0.0, le=1.0, description="Risk score for this alternative")
+    risk_label: Optional[str] = Field(None, description="Risk category for this alternative")
+    safety_status: Optional[str] = Field(None, description="Safety status: SAFE | CAUTION_REQUIRED | NOT_RECOMMENDED")
+    safety_warnings: List[str] = Field(default_factory=list, description="Safety warnings for this alternative")
+    pathway_genes: Optional[List[str]] = Field(None, description="Genes involved in this alternative's metabolism")
+
+
+class ValidatedAlternatives(BaseModel):
+    """Validated alternatives categorized by safety."""
+    safe_alternatives: List[Alternative] = Field(default_factory=list, description="Safe alternatives for this patient")
+    caution_required: List[Alternative] = Field(default_factory=list, description="Alternatives requiring caution")
+    not_recommended: List[Alternative] = Field(default_factory=list, description="Alternatives not recommended for this patient")
+    no_safe_alternatives: bool = Field(False, description="Whether no safe alternatives are available")
 
 
 class ScoreResponse(BaseModel):
@@ -63,7 +76,7 @@ class ScoreResponse(BaseModel):
     risk_score: float = Field(..., ge=0.0, le=1.0, description="Risk score [0-1]")
     risk_label: str = Field(..., description="Risk category: low | moderate | high")
     rationales: List[Rationale] = Field(default_factory=list, description="Explanations")
-    suggested_alternatives: List[Alternative] = Field(default_factory=list, description="Alternative medications")
+    suggested_alternatives: ValidatedAlternatives = Field(..., description="Validated alternative medications")
     trace_id: str = Field(..., description="Request trace ID")
     model_version: str = Field(..., description="Model version")
     knowledge_version: str = Field(..., description="Knowledge base version")
@@ -81,13 +94,34 @@ class ScoreResponse(BaseModel):
                         "evidence": ["Combined loss impairs codeine activation significantly"]
                     }
                 ],
-                "suggested_alternatives": [
-                    {
-                        "rxnorm": "7052",
-                        "name": "morphine",
-                        "note": "does not require CYP2D6 activation"
-                    }
-                ],
+                "suggested_alternatives": {
+                    "safe_alternatives": [
+                        {
+                            "rxnorm": "7052",
+                            "name": "morphine",
+                            "note": "does not require CYP2D6 activation",
+                            "risk_score": 0.15,
+                            "risk_label": "low",
+                            "safety_status": "SAFE",
+                            "safety_warnings": [],
+                            "pathway_genes": ["UGT2B7"]
+                        }
+                    ],
+                    "caution_required": [
+                        {
+                            "rxnorm": "7804",
+                            "name": "oxycodone",
+                            "note": "metabolized primarily by CYP3A4",
+                            "risk_score": 0.45,
+                            "risk_label": "moderate",
+                            "safety_status": "CAUTION_REQUIRED",
+                            "safety_warnings": ["Patient has CYP3A4_reduced - monitor for drug accumulation"],
+                            "pathway_genes": ["CYP3A4", "CYP2D6"]
+                        }
+                    ],
+                    "not_recommended": [],
+                    "no_safe_alternatives": False
+                },
                 "trace_id": "uuid-here",
                 "model_version": "rules-0.1.0",
                 "knowledge_version": "rules-20250104"

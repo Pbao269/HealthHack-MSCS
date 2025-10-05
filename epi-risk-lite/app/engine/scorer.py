@@ -4,7 +4,7 @@ from pathlib import Path
 import uuid
 
 from .mapper import map_variants_to_tags, extract_gene_from_tag
-from .pathways import get_drug_info, filter_tags_by_pathway, get_alternatives
+from .pathways import get_drug_info, filter_tags_by_pathway, get_safe_alternatives
 from .rules import score_deterministic
 from .model_io import load_latest_model
 
@@ -94,14 +94,14 @@ class RiskScorer:
                 pathway_tags_set, pathway_gene_to_tags, drug_name
             )
         
-        # Get alternatives
-        alternatives = get_alternatives(drug_name)
+        # Get validated alternatives based on patient genetics
+        validated_alternatives = get_safe_alternatives(drug_name, variants)
         
         return {
             "risk_score": round(score, 3),
             "risk_label": label,
             "rationales": rationales,
-            "suggested_alternatives": alternatives,
+            "suggested_alternatives": validated_alternatives,
             "trace_id": trace_id,
             "model_version": self.model_version,
             "knowledge_version": "rules-20250104"

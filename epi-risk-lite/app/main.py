@@ -8,7 +8,7 @@ import logging
 from .config import settings
 from .schemas import (
     ScoreRequest, ScoreResponse, HealthResponse, VersionResponse,
-    Rationale, Alternative
+    Rationale, Alternative, ValidatedAlternatives
 )
 from .engine.scorer import RiskScorer
 from .parsers.csv_parser import parse_csv
@@ -249,15 +249,25 @@ def _format_score_response(result: dict) -> ScoreResponse:
         Rationale(**r) for r in result.get("rationales", [])
     ]
     
-    alternatives = [
-        Alternative(**a) for a in result.get("suggested_alternatives", [])
-    ]
+    # Handle the new validated alternatives structure
+    suggested_alternatives_data = result.get("suggested_alternatives", {})
+    
+    # Convert alternatives to Pydantic models
+    def convert_alternatives(alt_list):
+        return [Alternative(**alt) for alt in alt_list]
+    
+    validated_alternatives = ValidatedAlternatives(
+        safe_alternatives=convert_alternatives(suggested_alternatives_data.get("safe_alternatives", [])),
+        caution_required=convert_alternatives(suggested_alternatives_data.get("caution_required", [])),
+        not_recommended=convert_alternatives(suggested_alternatives_data.get("not_recommended", [])),
+        no_safe_alternatives=suggested_alternatives_data.get("no_safe_alternatives", False)
+    )
     
     return ScoreResponse(
         risk_score=result["risk_score"],
         risk_label=result["risk_label"],
         rationales=rationales,
-        suggested_alternatives=alternatives,
+        suggested_alternatives=validated_alternatives,
         trace_id=result["trace_id"],
         model_version=result["model_version"],
         knowledge_version=result["knowledge_version"]
