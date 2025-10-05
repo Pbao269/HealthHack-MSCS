@@ -41,6 +41,27 @@ app.add_middleware(
 scorer = RiskScorer(model_dir=settings.model_dir)
 
 
+@app.get("/")
+async def root():
+    """Root endpoint with API information and links."""
+    return {
+        "message": "Epi-Risk Lite API",
+        "description": "Pharmacogenomic risk assessment API for medication safety",
+        "version": settings.api_version,
+        "docs": "/docs",
+        "redoc": "/redoc",
+        "health": "/healthz",
+        "version_info": "/version",
+        "endpoints": {
+            "score_file": "POST /v1/score-file",
+            "score_variants": "POST /v1/score", 
+            "train_model": "POST /v1/train-file",
+            "health_check": "GET /healthz",
+            "version": "GET /version"
+        }
+    }
+
+
 @app.get("/healthz", response_model=HealthResponse)
 async def health_check():
     """Health check endpoint."""
