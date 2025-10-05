@@ -1,266 +1,177 @@
-# Epi-Risk Lite Data Expansion Scripts
+# Epi-Risk Lite Scripts
 
-This directory contains scripts to collect and integrate data from credible online sources to expand the Epi-Risk Lite knowledge base.
+This directory contains testing and analysis scripts for the Epi-Risk Lite application.
 
-## 🎯 **Purpose**
+## ⚠️ **IMPORTANT NOTE**
 
-Expand the knowledge base from:
-- **7 medications** → **50+ medications**
-- **10+ genes** → **50+ genes** 
-- **20+ variants** → **200+ variants**
+**Data collection scripts are currently disabled** due to:
+- API authentication requirements (PharmGKB)
+- Web scraping unreliability (CPIC, FDA)
+- Terms of service restrictions
 
-## 📚 **Data Sources**
+These scripts are kept for **reference only** and are excluded from CI/CD pipelines.
 
-### 1. **PharmGKB (Pharmacogenomics Knowledge Base)**
-- **URL**: https://www.pharmgkb.org/
-- **API**: https://api.pharmgkb.org/v1
-- **Data**: Drug-gene interactions, clinical annotations, variant annotations
-- **Script**: `collect_pharmgkb_data.py`
+## 📊 **Current Data Coverage**
 
-### 2. **CPIC (Clinical Pharmacogenetics Implementation Consortium)**
-- **URL**: https://cpicpgx.org/
-- **Data**: Evidence-based guidelines for drug-gene pairs
-- **Script**: `collect_cpic_data.py`
+Our manually curated knowledge base includes:
+- **34 medications** with pharmacogenomic data
+- **26 genes** across multiple pathways
+- **88 genetic variants** with functional consequences
+- **181 star alleles** with clinical significance
+- **25 alternative medication sets**
+- **22 functional tags** for scoring
+- **10 epistasis pairs** for complex interactions
 
-### 3. **FDA Table of Pharmacogenomic Biomarkers**
-- **URL**: https://www.fda.gov/drugs/science-and-research-drugs/table-pharmacogenomic-biomarkers-drug-labeling
-- **Data**: FDA-approved drug labels with pharmacogenomic information
-- **Script**: `collect_fda_data.py`
+## 🧪 **Working Scripts**
 
-### 4. **Data Integration**
-- **Script**: `integrate_data.py`
-- **Purpose**: Combine data from all sources into unified knowledge base
+### 1. **API Testing Scripts**
+- **`end_to_end_test.py`** - Comprehensive API endpoint testing
+- **`test_api_with_expanded_data.py`** - API testing with new data
+- **`test_expanded_data.py`** - Data validation testing
+
+### 2. **Analysis Scripts**
+- **`final_coverage_analysis.py`** - Coverage analysis and reporting
+- **`validation_test_cases.md`** - Test case documentation
+
+### 3. **Reference Scripts (Non-Working)**
+- **`collect_pharmgkb_data.py`** - PharmGKB data collection (API auth issues)
+- **`collect_cpic_data.py`** - CPIC data collection (web scraping issues)
+- **`collect_fda_data.py`** - FDA data collection (web scraping issues)
+- **`integrate_data.py`** - Data integration (depends on collectors)
 
 ## 🚀 **Quick Start**
 
-### 1. Install Dependencies
+### 1. Run API Tests
 
 ```bash
-cd scripts
-pip install -r requirements.txt
+cd epi-risk-lite/scripts
+
+# Test API endpoints
+python end_to_end_test.py
+
+# Test with expanded data
+python test_api_with_expanded_data.py
+
+# Run coverage analysis
+python final_coverage_analysis.py
 ```
 
-### 2. Run Data Collection
+### 2. Test New Drug Coverage
 
 ```bash
-# Collect PharmGKB data
-python collect_pharmgkb_data.py
-
-# Collect CPIC data
-python collect_cpic_data.py
-
-# Collect FDA data
-python collect_fda_data.py
+# Test specific drug scenarios
+python test_expanded_data.py
 ```
 
-### 3. Integrate Data
+## 📋 **Test Cases**
 
-```bash
-# Integrate all collected data
-python integrate_data.py
-```
+The `validation_test_cases.md` file contains comprehensive test cases covering:
 
-### 4. Update Application
+### **High-Risk Scenarios**
+- **TMPT + Thiopurines** (severe myelosuppression)
+- **DPYD + Fluoropyrimidines** (severe toxicity)
+- **CYP2D6 + Codeine** (respiratory depression)
+- **HLA-B*5701 + Abacavir** (hypersensitivity)
 
-```bash
-# Copy expanded data to application
-cp ../app/engine/data/expanded_*.json ../app/engine/data/
+### **Moderate-Risk Scenarios**
+- **CYP2C19 + Clopidogrel** (reduced efficacy)
+- **SLCO1B1 + Simvastatin** (myopathy)
+- **VKORC1 + Warfarin** (bleeding risk)
 
-# Restart application to use new data
-cd ..
-uvicorn app.main:app --reload
-```
-
-## 📊 **Expected Results**
-
-After running all scripts, you should have:
-
-### New Files Created
-```
-app/engine/data/
-├── expanded_drug_gene_map.json      # 50+ drugs
-├── expanded_allele_proxies.json     # 200+ variants
-├── expanded_guidelines.json         # Clinical evidence
-├── expanded_alternatives.json       # Alternative medications
-└── expanded_knowledge_base.json     # Complete knowledge base
-```
-
-### Data Sources
-- **PharmGKB**: Drug-gene interactions, clinical annotations
-- **CPIC**: Evidence-based guidelines
-- **FDA**: Pharmacogenomic biomarkers
-- **Existing**: Current knowledge base
+### **New Drug Coverage**
+- **Fluoxetine** (CYP2D6, CYP2C19)
+- **Metoprolol** (CYP2D6, ADRB1)
+- **Omeprazole** (CYP2C19, CYP3A4)
+- **Abacavir** (HLA-B*5701)
 
 ## 🔧 **Script Details**
 
-### `collect_pharmgkb_data.py`
-- **Purpose**: Download drug-gene interactions and variant annotations
-- **API**: Uses PharmGKB REST API
-- **Output**: `pharmgkb_drug_gene_map.json`, `pharmgkb_allele_proxies.json`
+### **Working Scripts**
 
-### `collect_cpic_data.py`
-- **Purpose**: Scrape CPIC guidelines for drug-gene pairs
-- **Method**: Web scraping with BeautifulSoup
-- **Output**: `cpic_guidelines.json`, `cpic_drug_gene_map.json`
+#### `end_to_end_test.py`
+- Tests all API endpoints (`/v1/score`, `/v1/score-file`, `/healthz`, `/version`)
+- Validates response schemas and data types
+- Tests error handling and edge cases
+- Generates comprehensive test reports
 
-### `collect_fda_data.py`
-- **Purpose**: Extract FDA pharmacogenomic biomarkers table
-- **Method**: Web scraping FDA website
-- **Output**: `fda_biomarkers.json`, `fda_drug_gene_map.json`
+#### `test_api_with_expanded_data.py`
+- Tests API with the new comprehensive data
+- Validates drug-gene mappings
+- Tests functional tag generation
+- Verifies scoring accuracy
 
-### `integrate_data.py`
-- **Purpose**: Combine all data sources into unified knowledge base
-- **Method**: Data merging and deduplication
-- **Output**: `expanded_*.json` files
+#### `final_coverage_analysis.py`
+- Analyzes current data coverage
+- Compares against research benchmarks
+- Identifies gaps and missing scenarios
+- Generates coverage reports
 
-## 📈 **Data Expansion Goals**
+### **Reference Scripts (Non-Working)**
 
-### Medications (7 → 50+)
-- **High Priority**: Warfarin, clopidogrel, statins, antidepressants, antipsychotics
-- **Medium Priority**: Chemotherapy drugs, immunosuppressants, cardiovascular drugs
-- **Low Priority**: Rare disease drugs, experimental compounds
+#### `collect_pharmgkb_data.py`
+- **Issue**: Requires API key authentication
+- **Purpose**: Collect drug-gene interactions from PharmGKB
+- **Status**: Disabled, kept for reference
 
-### Genes (10+ → 50+)
-- **Phase I Enzymes**: CYP1A2, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, CYP3A4, CYP3A5
-- **Phase II Enzymes**: UGT1A1, UGT2B7, UGT2B15, SULT1A1, COMT, TPMT, NAT2
-- **Transporters**: ABCB1, ABCC2, ABCG2, SLCO1B1, SLCO1B3, SLC22A1
-- **Receptors**: OPRM1, ADRB1, ADRB2, DRD2, HTR2A, VKORC1
+#### `collect_cpic_data.py`
+- **Issue**: Web scraping unreliable, anti-bot protection
+- **Purpose**: Collect CPIC guidelines
+- **Status**: Disabled, kept for reference
 
-### Variants (20+ → 200+)
-- **SNPs**: rsIDs with functional consequences
-- **Star Alleles**: Comprehensive pharmacogene haplotypes
-- **CNVs**: Copy number variations affecting drug metabolism
+#### `collect_fda_data.py`
+- **Issue**: Complex website structure, dynamic content
+- **Purpose**: Collect FDA pharmacogenomic biomarkers
+- **Status**: Disabled, kept for reference
 
-## 🛠 **Customization**
+## 📈 **Expected Test Results**
 
-### Adding New Data Sources
+When running the working scripts, you should see:
 
-1. **Create new collection script**:
-```python
-# scripts/collect_new_source.py
-class NewSourceCollector:
-    def collect_data(self):
-        # Implementation
-        pass
-```
+### **API Tests**
+- ✅ All endpoints responding correctly
+- ✅ Proper error handling
+- ✅ Valid response schemas
+- ✅ Correct scoring calculations
 
-2. **Update integration script**:
-```python
-# scripts/integrate_data.py
-def integrate_new_source_data(self):
-    # Add new source integration
-    pass
-```
+### **Coverage Analysis**
+- **34 medications** covered
+- **26 genes** in knowledge base
+- **88 variants** with functional consequences
+- **High-risk scenarios** properly identified
 
-### Modifying Data Processing
+### **New Drug Testing**
+- **Fluoxetine**: CYP2D6/CYP2C19 interactions
+- **Metoprolol**: CYP2D6/ADRB1 interactions
+- **Omeprazole**: CYP2C19/CYP3A4 interactions
+- **Abacavir**: HLA-B*5701 hypersensitivity
 
-Edit the processing methods in each collection script to customize how data is transformed and mapped to the Epi-Risk Lite schema.
+## 🚨 **Troubleshooting**
 
-## 🔍 **Data Quality**
+### **Common Issues**
 
-### Validation Checks
-- **Cross-validation** between sources
-- **Duplicate detection** and removal
-- **Data completeness** verification
-- **Format consistency** checks
+1. **API not running**
+   ```bash
+   # Start API first
+   cd epi-risk-lite
+   uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+   ```
 
-### Quality Metrics
-- **Coverage**: Number of drugs/genes/variants
-- **Accuracy**: Expert-validated interactions
-- **Completeness**: Missing data identification
-- **Consistency**: Format standardization
+2. **Import errors**
+   ```bash
+   # Install dependencies
+   pip install -e .
+   pip install -e ".[dev]"
+   ```
 
-## 📋 **Troubleshooting**
+3. **Data not found**
+   ```bash
+   # Ensure data files exist
+   ls app/engine/data/*.json
+   ```
 
-### Common Issues
+## 📚 **References**
 
-1. **API Rate Limits**
-   - Add delays between requests
-   - Use session with proper headers
-   - Implement retry logic
-
-2. **Website Changes**
-   - Update CSS selectors
-   - Modify parsing logic
-   - Add error handling
-
-3. **Data Format Issues**
-   - Validate JSON structure
-   - Check data types
-   - Handle missing fields
-
-### Debug Mode
-
-Enable debug logging:
-```python
-import logging
-logging.basicConfig(level=logging.DEBUG)
-```
-
-## 🔄 **Maintenance**
-
-### Regular Updates
-- **Monthly**: PharmGKB updates
-- **Quarterly**: CPIC guideline updates
-- **Annually**: Complete knowledge base review
-
-### Version Control
-- **Git tags** for knowledge base versions
-- **Change logs** for each update
-- **Backup** of previous versions
-
-## 📊 **Performance**
-
-### Expected Runtime
-- **PharmGKB**: 5-10 minutes
-- **CPIC**: 10-15 minutes
-- **FDA**: 5-10 minutes
-- **Integration**: 2-5 minutes
-- **Total**: 20-40 minutes
-
-### Resource Usage
-- **Memory**: ~500MB peak
-- **Disk**: ~100MB for all data files
-- **Network**: ~50MB downloads
-
-## 🚨 **Important Notes**
-
-### Data Licensing
-- **PharmGKB**: Open access, cite appropriately
-- **CPIC**: Open access, cite guidelines
-- **FDA**: Public domain data
-- **RxNorm**: Public domain
-
-### Usage Restrictions
-- **Rate limiting**: Respect API limits
-- **Attribution**: Cite data sources
-- **Updates**: Keep data current
-- **Validation**: Verify data accuracy
-
-## 📞 **Support**
-
-For issues with data collection:
-1. Check logs for error messages
-2. Verify network connectivity
-3. Update dependencies
-4. Check source website changes
-
-## 🎯 **Success Metrics**
-
-### Quantitative Goals
-- **Drugs**: 7 → 50+ (7x increase)
-- **Genes**: 10+ → 50+ (5x increase)
-- **Variants**: 20+ → 200+ (10x increase)
-- **Interactions**: 50+ → 500+ (10x increase)
-
-### Qualitative Goals
-- **Coverage**: Major drug classes represented
-- **Accuracy**: Expert-validated interactions
-- **Completeness**: Comprehensive variant coverage
-- **Usability**: Clear clinical rationales
-
----
-
-**Status**: Ready for use  
-**Last Updated**: October 4, 2025  
-**Version**: 1.0
+- **PharmGKB**: https://www.pharmgkb.org/
+- **CPIC**: https://cpicpgx.org/
+- **FDA Biomarkers**: https://www.fda.gov/drugs/science-and-research-drugs/table-pharmacogenomic-biomarkers-drug-labeling
+- **API Documentation**: http://localhost:8000/docs

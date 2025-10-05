@@ -24,22 +24,22 @@ PHARMGKB_BASE_URL = "https://api.pharmgkb.org/v1"
 class PharmGKBCollector:
     """Collects data from PharmGKB API and processes it for Epi-Risk Lite."""
     
-    def __init__(self, output_dir: Path = Path("epi-risk-lite/app/engine/data")):
+    def __init__(self, output_dir: Path = Path("app/engine/data")):
         self.output_dir = output_dir
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'Epi-Risk-Lite/1.0 (https://github.com/your-repo/epi-risk-lite)'
+            'User-Agent': 'Epi-Risk-Lite/1.0 (https://github.com/Pbao269/HealthHack-MSCS)'
         })
     
     def get_drug_gene_interactions(self) -> List[Dict]:
         """Download drug-gene interactions from PharmGKB."""
         logger.info("Downloading drug-gene interactions...")
         
-        # PharmGKB drug-gene interactions endpoint
+        # PharmGKB drug-gene interactions endpoint (updated)
         url = f"{PHARMGKB_BASE_URL}/data/drugGeneInteractions"
         
         try:
-            response = self.session.get(url, params={'format': 'json'})
+            response = self.session.get(url, params={'format': 'json', 'view': 'full'})
             response.raise_for_status()
             data = response.json()
             
@@ -70,7 +70,7 @@ class PharmGKBCollector:
         url = f"{PHARMGKB_BASE_URL}/data/clinicalAnnotations"
         
         try:
-            response = self.session.get(url, params={'format': 'json'})
+            response = self.session.get(url, params={'format': 'json', 'view': 'full'})
             response.raise_for_status()
             data = response.json()
             
@@ -104,7 +104,7 @@ class PharmGKBCollector:
         url = f"{PHARMGKB_BASE_URL}/data/variantAnnotations"
         
         try:
-            response = self.session.get(url, params={'format': 'json'})
+            response = self.session.get(url, params={'format': 'json', 'view': 'full'})
             response.raise_for_status()
             data = response.json()
             

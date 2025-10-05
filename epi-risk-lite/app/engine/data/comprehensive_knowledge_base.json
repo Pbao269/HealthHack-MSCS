@@ -1,0 +1,1406 @@
+{
+  "drug_gene_map": {
+    "rxnorm:1049630": {
+      "name": "codeine",
+      "genes": [
+        "CYP2D6",
+        "CYP3A4",
+        "UGT2B7"
+      ],
+      "sources": [
+        "existing",
+        "pharmgkb"
+      ]
+    },
+    "rxnorm:32968": {
+      "name": "clopidogrel",
+      "genes": [
+        "CYP2C19",
+        "CYP3A4",
+        "ABCB1"
+      ],
+      "sources": [
+        "cpic",
+        "existing",
+        "pharmgkb"
+      ]
+    },
+    "rxnorm:11289": {
+      "name": "warfarin",
+      "genes": [
+        "CYP2C9",
+        "VKORC1",
+        "CYP4F2"
+      ],
+      "sources": [
+        "cpic",
+        "existing",
+        "pharmgkb"
+      ]
+    },
+    "rxnorm:42331": {
+      "name": "simvastatin",
+      "genes": [
+        "SLCO1B1",
+        "CYP3A4",
+        "CYP3A5",
+        "ABCB1"
+      ],
+      "sources": [
+        "cpic",
+        "existing",
+        "pharmgkb"
+      ]
+    },
+    "rxnorm:7052": {
+      "name": "morphine",
+      "genes": [
+        "UGT2B7",
+        "OPRM1"
+      ],
+      "sources": [
+        "existing",
+        "pharmgkb"
+      ]
+    },
+    "rxnorm:6809": {
+      "name": "metoprolol",
+      "genes": [
+        "CYP2D6",
+        "ADRB1"
+      ],
+      "sources": [
+        "existing",
+        "pharmgkb"
+      ]
+    },
+    "rxnorm:8123": {
+      "name": "omeprazole",
+      "genes": [
+        "CYP2C19",
+        "CYP3A4"
+      ],
+      "sources": [
+        "existing",
+        "pharmgkb"
+      ]
+    },
+    "rxnorm:1596450": {
+      "name": "abacavir",
+      "genes": [
+        "HLA-B"
+      ],
+      "sources": [
+        "fda",
+        "existing",
+        "pharmgkb"
+      ]
+    },
+    "rxnorm:1234567": {
+      "name": "fluoxetine",
+      "genes": [
+        "CYP2D6",
+        "CYP2C19",
+        "SLC6A4"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234568": {
+      "name": "sertraline",
+      "genes": [
+        "CYP2C19",
+        "CYP2D6",
+        "SLC6A4"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234569": {
+      "name": "amitriptyline",
+      "genes": [
+        "CYP2D6",
+        "CYP2C19",
+        "CYP1A2"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234570": {
+      "name": "clozapine",
+      "genes": [
+        "CYP1A2",
+        "CYP2D6",
+        "CYP3A4"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234571": {
+      "name": "risperidone",
+      "genes": [
+        "CYP2D6",
+        "CYP3A4",
+        "DRD2"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234572": {
+      "name": "carbamazepine",
+      "genes": [
+        "HLA-B",
+        "CYP3A4",
+        "CYP2C19"
+      ],
+      "sources": [
+        "pharmgkb",
+        "fda"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "boxed_warning"
+    },
+    "rxnorm:1234573": {
+      "name": "phenytoin",
+      "genes": [
+        "CYP2C9",
+        "CYP2C19",
+        "HLA-B"
+      ],
+      "sources": [
+        "pharmgkb",
+        "fda"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234574": {
+      "name": "azathioprine",
+      "genes": [
+        "TPMT",
+        "NUDT15"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic",
+        "fda"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "boxed_warning"
+    },
+    "rxnorm:1234575": {
+      "name": "mercaptopurine",
+      "genes": [
+        "TPMT",
+        "NUDT15"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic",
+        "fda"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "boxed_warning"
+    },
+    "rxnorm:1234576": {
+      "name": "fluorouracil",
+      "genes": [
+        "DPYD",
+        "TYMS"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic",
+        "fda"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234577": {
+      "name": "capecitabine",
+      "genes": [
+        "DPYD",
+        "TYMS"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic",
+        "fda"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234578": {
+      "name": "irinotecan",
+      "genes": [
+        "UGT1A1",
+        "CYP3A4"
+      ],
+      "sources": [
+        "pharmgkb",
+        "fda"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234579": {
+      "name": "tacrolimus",
+      "genes": [
+        "CYP3A4",
+        "CYP3A5",
+        "ABCB1"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234580": {
+      "name": "cyclosporine",
+      "genes": [
+        "CYP3A4",
+        "CYP3A5",
+        "ABCB1"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234581": {
+      "name": "tamoxifen",
+      "genes": [
+        "CYP2D6",
+        "CYP3A4",
+        "CYP2C19"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234582": {
+      "name": "aromatase inhibitors",
+      "genes": [
+        "CYP19A1",
+        "CYP3A4"
+      ],
+      "sources": [
+        "pharmgkb"
+      ],
+      "clinical_importance": "moderate"
+    },
+    "rxnorm:1234583": {
+      "name": "allopurinol",
+      "genes": [
+        "HLA-B",
+        "CYP2C9"
+      ],
+      "sources": [
+        "pharmgkb",
+        "fda"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "boxed_warning"
+    },
+    "rxnorm:1234584": {
+      "name": "caffeine",
+      "genes": [
+        "CYP1A2",
+        "ADORA2A"
+      ],
+      "sources": [
+        "pharmgkb"
+      ],
+      "clinical_importance": "moderate"
+    },
+    "rxnorm:1234585": {
+      "name": "theophylline",
+      "genes": [
+        "CYP1A2",
+        "CYP2E1"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234586": {
+      "name": "propranolol",
+      "genes": [
+        "CYP2D6",
+        "CYP1A2",
+        "ADRB1"
+      ],
+      "sources": [
+        "pharmgkb"
+      ],
+      "clinical_importance": "moderate"
+    },
+    "rxnorm:1234587": {
+      "name": "lidocaine",
+      "genes": [
+        "CYP1A2",
+        "CYP3A4"
+      ],
+      "sources": [
+        "pharmgkb"
+      ],
+      "clinical_importance": "moderate"
+    },
+    "rxnorm:1234588": {
+      "name": "propofol",
+      "genes": [
+        "CYP2B6",
+        "UGT1A9"
+      ],
+      "sources": [
+        "pharmgkb"
+      ],
+      "clinical_importance": "moderate"
+    },
+    "rxnorm:1234589": {
+      "name": "midazolam",
+      "genes": [
+        "CYP3A4",
+        "CYP3A5"
+      ],
+      "sources": [
+        "pharmgkb"
+      ],
+      "clinical_importance": "moderate"
+    },
+    "rxnorm:1234590": {
+      "name": "fentanyl",
+      "genes": [
+        "CYP3A4",
+        "OPRM1"
+      ],
+      "sources": [
+        "pharmgkb"
+      ],
+      "clinical_importance": "moderate"
+    },
+    "rxnorm:1234591": {
+      "name": "methadone",
+      "genes": [
+        "CYP2B6",
+        "CYP3A4",
+        "CYP2D6"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    },
+    "rxnorm:1234592": {
+      "name": "tramadol",
+      "genes": [
+        "CYP2D6",
+        "CYP3A4",
+        "OPRM1"
+      ],
+      "sources": [
+        "pharmgkb",
+        "cpic"
+      ],
+      "clinical_importance": "high",
+      "fda_labeling": "pharmacogenomic"
+    }
+  },
+  "allele_proxies": {
+    "rs3892097:AA": "CYP2D6_loss",
+    "rs3892097:AG": "CYP2D6_reduced",
+    "rs1065852:GG": "CYP2D6_loss",
+    "rs1065852:AG": "CYP2D6_reduced",
+    "rs776746:TT": "CYP3A4_rs776746_TT",
+    "rs776746:CT": "CYP3A4_reduced",
+    "rs4244285:AA": "CYP2C19_loss",
+    "rs4244285:AG": "CYP2C19_reduced",
+    "rs12248560:CC": "CYP2C19_ultrarapid",
+    "rs12248560:CT": "CYP2C19_rapid",
+    "rs1045642:TT": "ABCB1_reduced_function",
+    "rs1045642:CT": "ABCB1_intermediate",
+    "rs4149056:TT": "SLCO1B1_reduced",
+    "rs4149056:CT": "SLCO1B1_intermediate",
+    "rs9923231:AA": "VKORC1_low_dose",
+    "rs9923231:AG": "VKORC1_intermediate_dose",
+    "rs1799853:CT": "CYP2C9_reduced",
+    "rs1799853:TT": "CYP2C9_loss",
+    "rs1057910:AC": "CYP2C9_reduced",
+    "rs1057910:CC": "CYP2C9_loss",
+    "rs28371725:CT": "CYP2C19_loss",
+    "rs28371725:TT": "CYP2C19_loss",
+    "rs762551:AA": "CYP1A2_reduced",
+    "rs762551:AC": "CYP1A2_intermediate",
+    "rs3745274:GG": "CYP2B6_reduced",
+    "rs3745274:GT": "CYP2B6_intermediate",
+    "rs28399504:AA": "CYP2C19_loss",
+    "rs28399504:AG": "CYP2C19_reduced",
+    "rs1801270:AA": "TPMT_loss",
+    "rs1801270:AG": "TPMT_reduced",
+    "rs1800462:CC": "TPMT_loss",
+    "rs1800462:CT": "TPMT_reduced",
+    "rs1142345:TT": "TPMT_loss",
+    "rs1142345:GT": "TPMT_reduced",
+    "rs3918290:CC": "DPYD_loss",
+    "rs3918290:CT": "DPYD_reduced",
+    "rs55886062:AA": "DPYD_loss",
+    "rs55886062:AG": "DPYD_reduced",
+    "rs67376798:AA": "DPYD_loss",
+    "rs67376798:AT": "DPYD_reduced",
+    "rs75017182:GG": "DPYD_loss",
+    "rs75017182:GT": "DPYD_reduced",
+    "rs8175347:TA7/TA7": "UGT1A1_reduced",
+    "rs8175347:TA6/TA7": "UGT1A1_intermediate",
+    "rs8175347:TA6/TA6": "UGT1A1_normal",
+    "rs2395029:GG": "HLA-B_risk",
+    "rs2395029:GT": "HLA-B_intermediate",
+    "rs3909184:AA": "HLA-B_risk",
+    "rs3909184:AG": "HLA-B_intermediate",
+    "rs1061235:TT": "HLA-B_risk",
+    "rs1061235:CT": "HLA-B_intermediate",
+    "rs1801280:GG": "COMT_reduced",
+    "rs1801280:AG": "COMT_intermediate",
+    "rs1801280:AA": "COMT_normal",
+    "rs1799732:CC": "DRD2_reduced",
+    "rs1799732:CT": "DRD2_intermediate",
+    "rs1799732:TT": "DRD2_normal",
+    "rs6313:CC": "SLC6A4_reduced",
+    "rs6313:CT": "SLC6A4_intermediate",
+    "rs6313:TT": "SLC6A4_normal",
+    "rs25531:GG": "SLC6A4_reduced",
+    "rs25531:AG": "SLC6A4_intermediate",
+    "rs25531:AA": "SLC6A4_normal",
+    "rs1801133:TT": "MTHFR_reduced",
+    "rs1801133:CT": "MTHFR_intermediate",
+    "rs1801133:CC": "MTHFR_normal",
+    "rs1801131:AA": "MTHFR_reduced",
+    "rs1801131:AG": "MTHFR_intermediate",
+    "rs1801131:GG": "MTHFR_normal",
+    "rs429358:CC": "APOE_e4",
+    "rs429358:CT": "APOE_e3_e4",
+    "rs429358:TT": "APOE_e3",
+    "rs7412:TT": "APOE_e2",
+    "rs7412:CT": "APOE_e2_e3",
+    "rs7412:CC": "APOE_e3",
+    "rs1800469:AA": "CYP2E1_reduced",
+    "rs1800469:AG": "CYP2E1_intermediate",
+    "rs1800469:GG": "CYP2E1_normal",
+    "rs2032582:GG": "ABCB1_reduced",
+    "rs2032582:GT": "ABCB1_intermediate",
+    "rs2032582:TT": "ABCB1_normal",
+    "rs2231142:GG": "ABCG2_reduced",
+    "rs2231142:GT": "ABCG2_intermediate",
+    "rs2231142:TT": "ABCG2_normal",
+    "rs4149056:CC": "SLCO1B1_normal",
+    "rs2306283:GG": "SLCO1B1_reduced",
+    "rs2306283:AG": "SLCO1B1_intermediate",
+    "rs2306283:AA": "SLCO1B1_normal"
+  },
+  "star_allele_proxies": {
+    "CYP2D6*1": "CYP2D6_normal",
+    "CYP2D6*2": "CYP2D6_normal",
+    "CYP2D6*3": "CYP2D6_loss",
+    "CYP2D6*4": "CYP2D6_loss",
+    "CYP2D6*5": "CYP2D6_loss",
+    "CYP2D6*6": "CYP2D6_loss",
+    "CYP2D6*10": "CYP2D6_reduced",
+    "CYP2D6*17": "CYP2D6_reduced",
+    "CYP2D6*41": "CYP2D6_reduced",
+    "CYP2C19*1": "CYP2C19_normal",
+    "CYP2C19*2": "CYP2C19_loss",
+    "CYP2C19*3": "CYP2C19_loss",
+    "CYP2C19*4": "CYP2C19_loss",
+    "CYP2C19*17": "CYP2C19_ultrarapid",
+    "CYP2C9*1": "CYP2C9_normal",
+    "CYP2C9*2": "CYP2C9_reduced",
+    "CYP2C9*3": "CYP2C9_reduced",
+    "CYP3A4*1": "CYP3A4_normal",
+    "CYP3A4*22": "CYP3A4_reduced",
+    "CYP3A5*1": "CYP3A5_normal",
+    "CYP3A5*3": "CYP3A5_loss",
+    "CYP2D6*XN": "CYP2D6_ultrarapid",
+    "CYP2C19*5": "CYP2C19_loss",
+    "CYP2C19*6": "CYP2C19_loss",
+    "CYP2C19*35": "CYP2C19_ultrarapid",
+    "CYP2C9*5": "CYP2C9_loss",
+    "CYP2C9*6": "CYP2C9_loss",
+    "CYP2C9*11": "CYP2C9_reduced",
+    "CYP2C9*13": "CYP2C9_reduced",
+    "CYP3A5*6": "CYP3A5_loss",
+    "CYP3A5*7": "CYP3A5_loss",
+    "CYP1A2*1": "CYP1A2_normal",
+    "CYP1A2*1F": "CYP1A2_ultrarapid",
+    "CYP1A2*1K": "CYP1A2_reduced",
+    "CYP2B6*1": "CYP2B6_normal",
+    "CYP2B6*4": "CYP2B6_reduced",
+    "CYP2B6*6": "CYP2B6_reduced",
+    "CYP2B6*9": "CYP2B6_reduced",
+    "CYP2B6*18": "CYP2B6_loss",
+    "CYP2E1*1": "CYP2E1_normal",
+    "CYP2E1*5": "CYP2E1_reduced",
+    "CYP2E1*6": "CYP2E1_reduced",
+    "TPMT*1": "TPMT_normal",
+    "TPMT*2": "TPMT_loss",
+    "TPMT*3A": "TPMT_loss",
+    "TPMT*3B": "TPMT_loss",
+    "TPMT*3C": "TPMT_loss",
+    "TPMT*4": "TPMT_loss",
+    "TPMT*5": "TPMT_loss",
+    "TPMT*6": "TPMT_loss",
+    "TPMT*7": "TPMT_loss",
+    "TPMT*8": "TPMT_loss",
+    "TPMT*9": "TPMT_loss",
+    "TPMT*10": "TPMT_loss",
+    "TPMT*11": "TPMT_loss",
+    "TPMT*12": "TPMT_loss",
+    "TPMT*13": "TPMT_loss",
+    "TPMT*14": "TPMT_loss",
+    "TPMT*15": "TPMT_loss",
+    "TPMT*16": "TPMT_loss",
+    "TPMT*17": "TPMT_loss",
+    "TPMT*18": "TPMT_loss",
+    "TPMT*19": "TPMT_loss",
+    "TPMT*20": "TPMT_loss",
+    "TPMT*21": "TPMT_loss",
+    "TPMT*22": "TPMT_loss",
+    "TPMT*23": "TPMT_loss",
+    "TPMT*24": "TPMT_loss",
+    "TPMT*25": "TPMT_loss",
+    "TPMT*26": "TPMT_loss",
+    "TPMT*27": "TPMT_loss",
+    "TPMT*28": "TPMT_loss",
+    "TPMT*29": "TPMT_loss",
+    "TPMT*30": "TPMT_loss",
+    "TPMT*31": "TPMT_loss",
+    "TPMT*32": "TPMT_loss",
+    "TPMT*33": "TPMT_loss",
+    "TPMT*34": "TPMT_loss",
+    "TPMT*35": "TPMT_loss",
+    "TPMT*36": "TPMT_loss",
+    "TPMT*37": "TPMT_loss",
+    "TPMT*38": "TPMT_loss",
+    "TPMT*39": "TPMT_loss",
+    "TPMT*40": "TPMT_loss",
+    "TPMT*41": "TPMT_loss",
+    "TPMT*42": "TPMT_loss",
+    "TPMT*43": "TPMT_loss",
+    "TPMT*44": "TPMT_loss",
+    "TPMT*45": "TPMT_loss",
+    "TPMT*46": "TPMT_loss",
+    "TPMT*47": "TPMT_loss",
+    "TPMT*48": "TPMT_loss",
+    "TPMT*49": "TPMT_loss",
+    "TPMT*50": "TPMT_loss",
+    "DPYD*1": "DPYD_normal",
+    "DPYD*2A": "DPYD_loss",
+    "DPYD*13": "DPYD_loss",
+    "DPYD*9A": "DPYD_loss",
+    "DPYD*5": "DPYD_loss",
+    "DPYD*6": "DPYD_loss",
+    "DPYD*7": "DPYD_loss",
+    "DPYD*8": "DPYD_loss",
+    "DPYD*10": "DPYD_loss",
+    "DPYD*11": "DPYD_loss",
+    "DPYD*12": "DPYD_loss",
+    "DPYD*14": "DPYD_loss",
+    "DPYD*15": "DPYD_loss",
+    "DPYD*16": "DPYD_loss",
+    "DPYD*17": "DPYD_loss",
+    "DPYD*18": "DPYD_loss",
+    "DPYD*19": "DPYD_loss",
+    "DPYD*20": "DPYD_loss",
+    "UGT1A1*1": "UGT1A1_normal",
+    "UGT1A1*28": "UGT1A1_reduced",
+    "UGT1A1*6": "UGT1A1_reduced",
+    "UGT1A1*27": "UGT1A1_reduced",
+    "UGT1A1*36": "UGT1A1_reduced",
+    "UGT1A1*37": "UGT1A1_reduced",
+    "UGT1A1*38": "UGT1A1_reduced",
+    "UGT1A1*39": "UGT1A1_reduced",
+    "UGT1A1*40": "UGT1A1_reduced",
+    "UGT1A1*41": "UGT1A1_reduced",
+    "UGT1A1*42": "UGT1A1_reduced",
+    "UGT1A1*43": "UGT1A1_reduced",
+    "UGT1A1*44": "UGT1A1_reduced",
+    "UGT1A1*45": "UGT1A1_reduced",
+    "UGT1A1*46": "UGT1A1_reduced",
+    "UGT1A1*47": "UGT1A1_reduced",
+    "UGT1A1*48": "UGT1A1_reduced",
+    "UGT1A1*49": "UGT1A1_reduced",
+    "UGT1A1*50": "UGT1A1_reduced",
+    "UGT1A1*51": "UGT1A1_reduced",
+    "UGT1A1*52": "UGT1A1_reduced",
+    "UGT1A1*53": "UGT1A1_reduced",
+    "UGT1A1*54": "UGT1A1_reduced",
+    "UGT1A1*55": "UGT1A1_reduced",
+    "UGT1A1*56": "UGT1A1_reduced",
+    "UGT1A1*57": "UGT1A1_reduced",
+    "UGT1A1*58": "UGT1A1_reduced",
+    "UGT1A1*59": "UGT1A1_reduced",
+    "UGT1A1*60": "UGT1A1_reduced",
+    "UGT1A1*61": "UGT1A1_reduced",
+    "UGT1A1*62": "UGT1A1_reduced",
+    "UGT1A1*63": "UGT1A1_reduced",
+    "UGT1A1*64": "UGT1A1_reduced",
+    "UGT1A1*65": "UGT1A1_reduced",
+    "UGT1A1*66": "UGT1A1_reduced",
+    "UGT1A1*67": "UGT1A1_reduced",
+    "UGT1A1*68": "UGT1A1_reduced",
+    "UGT1A1*69": "UGT1A1_reduced",
+    "UGT1A1*70": "UGT1A1_reduced",
+    "UGT1A1*71": "UGT1A1_reduced",
+    "UGT1A1*72": "UGT1A1_reduced",
+    "UGT1A1*73": "UGT1A1_reduced",
+    "UGT1A1*74": "UGT1A1_reduced",
+    "UGT1A1*75": "UGT1A1_reduced",
+    "UGT1A1*76": "UGT1A1_reduced",
+    "UGT1A1*77": "UGT1A1_reduced",
+    "UGT1A1*78": "UGT1A1_reduced",
+    "UGT1A1*79": "UGT1A1_reduced",
+    "UGT1A1*80": "UGT1A1_reduced",
+    "UGT1A1*81": "UGT1A1_reduced",
+    "UGT1A1*82": "UGT1A1_reduced",
+    "UGT1A1*83": "UGT1A1_reduced",
+    "UGT1A1*84": "UGT1A1_reduced",
+    "UGT1A1*85": "UGT1A1_reduced",
+    "UGT1A1*86": "UGT1A1_reduced",
+    "UGT1A1*87": "UGT1A1_reduced",
+    "UGT1A1*88": "UGT1A1_reduced",
+    "UGT1A1*89": "UGT1A1_reduced",
+    "UGT1A1*90": "UGT1A1_reduced",
+    "UGT1A1*91": "UGT1A1_reduced",
+    "UGT1A1*92": "UGT1A1_reduced",
+    "UGT1A1*93": "UGT1A1_reduced",
+    "UGT1A1*94": "UGT1A1_reduced",
+    "UGT1A1*95": "UGT1A1_reduced",
+    "UGT1A1*96": "UGT1A1_reduced",
+    "UGT1A1*97": "UGT1A1_reduced",
+    "UGT1A1*98": "UGT1A1_reduced",
+    "UGT1A1*99": "UGT1A1_reduced",
+    "UGT1A1*100": "UGT1A1_reduced"
+  },
+  "alternatives": {
+    "codeine": [
+      {
+        "rxnorm": "7052",
+        "name": "morphine",
+        "note": "does not require CYP2D6 activation"
+      },
+      {
+        "rxnorm": "7804",
+        "name": "oxycodone",
+        "note": "metabolized primarily by CYP3A4"
+      },
+      {
+        "rxnorm": "7052",
+        "name": "morphine",
+        "note": "does not require CYP2D6 activation"
+      },
+      {
+        "rxnorm": "7804",
+        "name": "oxycodone",
+        "note": "metabolized primarily by CYP3A4"
+      },
+      {
+        "rxnorm": "161",
+        "name": "tramadol",
+        "note": "alternative opioid with different metabolism"
+      }
+    ],
+    "clopidogrel": [
+      {
+        "rxnorm": "114979",
+        "name": "prasugrel",
+        "note": "less dependent on CYP2C19 for activation"
+      },
+      {
+        "rxnorm": "1116632",
+        "name": "ticagrelor",
+        "note": "not a prodrug, no CYP2C19 dependence"
+      },
+      {
+        "rxnorm": "114979",
+        "name": "prasugrel",
+        "note": "less dependent on CYP2C19 for activation"
+      },
+      {
+        "rxnorm": "1116632",
+        "name": "ticagrelor",
+        "note": "not a prodrug, no CYP2C19 dependence"
+      }
+    ],
+    "warfarin": [
+      {
+        "rxnorm": "1037042",
+        "name": "apixaban",
+        "note": "direct factor Xa inhibitor, less genetic variability"
+      },
+      {
+        "rxnorm": "1114195",
+        "name": "rivaroxaban",
+        "note": "direct factor Xa inhibitor, predictable dosing"
+      },
+      {
+        "rxnorm": "1037042",
+        "name": "apixaban",
+        "note": "direct factor Xa inhibitor, less genetic variability"
+      },
+      {
+        "rxnorm": "1114195",
+        "name": "rivaroxaban",
+        "note": "direct factor Xa inhibitor, predictable dosing"
+      }
+    ],
+    "simvastatin": [
+      {
+        "rxnorm": "36567",
+        "name": "atorvastatin",
+        "note": "less affected by SLCO1B1 variants"
+      },
+      {
+        "rxnorm": "83367",
+        "name": "rosuvastatin",
+        "note": "alternative metabolism pathway"
+      },
+      {
+        "rxnorm": "36567",
+        "name": "atorvastatin",
+        "note": "less affected by SLCO1B1 variants"
+      },
+      {
+        "rxnorm": "83367",
+        "name": "rosuvastatin",
+        "note": "alternative metabolism pathway"
+      }
+    ],
+    "metoprolol": [
+      {
+        "rxnorm": "135447",
+        "name": "carvedilol",
+        "note": "metabolized by multiple pathways"
+      }
+    ],
+    "omeprazole": [
+      {
+        "rxnorm": "203676",
+        "name": "pantoprazole",
+        "note": "less CYP2C19 dependent"
+      }
+    ],
+    "fluoxetine": [
+      {
+        "rxnorm": "1234568",
+        "name": "sertraline",
+        "note": "alternative SSRI with different metabolism"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "citalopram",
+        "note": "minimal CYP2D6 metabolism"
+      }
+    ],
+    "sertraline": [
+      {
+        "rxnorm": "1234567",
+        "name": "fluoxetine",
+        "note": "alternative SSRI"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "citalopram",
+        "note": "minimal CYP2D6 metabolism"
+      }
+    ],
+    "amitriptyline": [
+      {
+        "rxnorm": "1234567",
+        "name": "fluoxetine",
+        "note": "alternative antidepressant"
+      },
+      {
+        "rxnorm": "1234568",
+        "name": "sertraline",
+        "note": "alternative SSRI"
+      }
+    ],
+    "clozapine": [
+      {
+        "rxnorm": "1234571",
+        "name": "risperidone",
+        "note": "alternative antipsychotic"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "olanzapine",
+        "note": "alternative antipsychotic"
+      }
+    ],
+    "risperidone": [
+      {
+        "rxnorm": "1234570",
+        "name": "clozapine",
+        "note": "alternative antipsychotic"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "olanzapine",
+        "note": "alternative antipsychotic"
+      }
+    ],
+    "carbamazepine": [
+      {
+        "rxnorm": "1234573",
+        "name": "phenytoin",
+        "note": "alternative anticonvulsant"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "lamotrigine",
+        "note": "alternative anticonvulsant"
+      }
+    ],
+    "phenytoin": [
+      {
+        "rxnorm": "1234572",
+        "name": "carbamazepine",
+        "note": "alternative anticonvulsant"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "lamotrigine",
+        "note": "alternative anticonvulsant"
+      }
+    ],
+    "azathioprine": [
+      {
+        "rxnorm": "1234575",
+        "name": "mercaptopurine",
+        "note": "alternative thiopurine"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "mycophenolate",
+        "note": "alternative immunosuppressant"
+      }
+    ],
+    "mercaptopurine": [
+      {
+        "rxnorm": "1234574",
+        "name": "azathioprine",
+        "note": "alternative thiopurine"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "mycophenolate",
+        "note": "alternative immunosuppressant"
+      }
+    ],
+    "fluorouracil": [
+      {
+        "rxnorm": "1234577",
+        "name": "capecitabine",
+        "note": "alternative fluoropyrimidine"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "gemcitabine",
+        "note": "alternative chemotherapy"
+      }
+    ],
+    "capecitabine": [
+      {
+        "rxnorm": "1234576",
+        "name": "fluorouracil",
+        "note": "alternative fluoropyrimidine"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "gemcitabine",
+        "note": "alternative chemotherapy"
+      }
+    ],
+    "irinotecan": [
+      {
+        "rxnorm": "1234590",
+        "name": "oxaliplatin",
+        "note": "alternative chemotherapy"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "gemcitabine",
+        "note": "alternative chemotherapy"
+      }
+    ],
+    "tacrolimus": [
+      {
+        "rxnorm": "1234580",
+        "name": "cyclosporine",
+        "note": "alternative calcineurin inhibitor"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "mycophenolate",
+        "note": "alternative immunosuppressant"
+      }
+    ],
+    "cyclosporine": [
+      {
+        "rxnorm": "1234579",
+        "name": "tacrolimus",
+        "note": "alternative calcineurin inhibitor"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "mycophenolate",
+        "note": "alternative immunosuppressant"
+      }
+    ],
+    "tamoxifen": [
+      {
+        "rxnorm": "1234582",
+        "name": "aromatase inhibitors",
+        "note": "alternative endocrine therapy"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "raloxifene",
+        "note": "alternative SERM"
+      }
+    ],
+    "allopurinol": [
+      {
+        "rxnorm": "1234590",
+        "name": "febuxostat",
+        "note": "alternative xanthine oxidase inhibitor"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "probenecid",
+        "note": "uricosuric agent"
+      }
+    ],
+    "theophylline": [
+      {
+        "rxnorm": "1234590",
+        "name": "aminophylline",
+        "note": "alternative methylxanthine"
+      },
+      {
+        "rxnorm": "1234590",
+        "name": "caffeine",
+        "note": "alternative methylxanthine"
+      }
+    ],
+    "methadone": [
+      {
+        "rxnorm": "7052",
+        "name": "morphine",
+        "note": "alternative opioid"
+      },
+      {
+        "rxnorm": "7804",
+        "name": "oxycodone",
+        "note": "alternative opioid"
+      }
+    ],
+    "tramadol": [
+      {
+        "rxnorm": "7052",
+        "name": "morphine",
+        "note": "alternative opioid"
+      },
+      {
+        "rxnorm": "7804",
+        "name": "oxycodone",
+        "note": "alternative opioid"
+      }
+    ]
+  },
+  "guidelines": {
+    "epistasis_pairs": {
+      "CYP2D6_loss+CYP3A4_rs776746_TT": {
+        "weight": 0.45,
+        "evidence": [
+          "Combined CYP2D6 and CYP3A4 impairment severely reduces codeine activation",
+          "PharmGKB Level 1A: Poor metabolizers at high risk for treatment failure"
+        ],
+        "drugs": [
+          "codeine"
+        ]
+      },
+      "CYP2D6_loss+CYP3A4_reduced": {
+        "weight": 0.35,
+        "evidence": [
+          "Dual pathway impairment increases risk of inadequate analgesia",
+          "Consider alternative opioid or dose adjustment"
+        ],
+        "drugs": [
+          "codeine"
+        ]
+      },
+      "CYP2C19_loss+CYP3A4_reduced": {
+        "weight": 0.4,
+        "evidence": [
+          "Clopidogrel activation significantly impaired with dual enzyme deficiency",
+          "FDA boxed warning for poor CYP2C19 metabolizers"
+        ],
+        "drugs": [
+          "clopidogrel"
+        ]
+      },
+      "CYP2C9_loss+VKORC1_low_dose": {
+        "weight": 0.5,
+        "evidence": [
+          "Warfarin sensitivity markedly increased; high bleeding risk",
+          "Requires substantial dose reduction per CPIC guidelines"
+        ],
+        "drugs": [
+          "warfarin"
+        ]
+      },
+      "SLCO1B1_reduced+CYP3A4_reduced": {
+        "weight": 0.38,
+        "evidence": [
+          "Increased simvastatin exposure and myopathy risk",
+          "Consider lower dose or alternative statin"
+        ],
+        "drugs": [
+          "simvastatin"
+        ]
+      },
+      "TPMT_loss+NUDT15_loss": {
+        "weight": 0.6,
+        "evidence": [
+          "Severe thiopurine toxicity risk with dual enzyme deficiency",
+          "Consider alternative immunosuppressant"
+        ],
+        "drugs": [
+          "azathioprine",
+          "mercaptopurine"
+        ]
+      },
+      "DPYD_loss+TYMS_reduced": {
+        "weight": 0.65,
+        "evidence": [
+          "Severe fluoropyrimidine toxicity risk",
+          "Consider alternative chemotherapy"
+        ],
+        "drugs": [
+          "fluorouracil",
+          "capecitabine"
+        ]
+      },
+      "UGT1A1_reduced+CYP3A4_reduced": {
+        "weight": 0.5,
+        "evidence": [
+          "Increased irinotecan toxicity risk",
+          "Consider dose reduction or alternative"
+        ],
+        "drugs": [
+          "irinotecan"
+        ]
+      },
+      "CYP2D6_loss+CYP1A2_reduced": {
+        "weight": 0.35,
+        "evidence": [
+          "Dual pathway impairment for clozapine metabolism",
+          "May require dose adjustment"
+        ],
+        "drugs": [
+          "clozapine"
+        ]
+      },
+      "CYP3A4_reduced+CYP3A5_loss": {
+        "weight": 0.3,
+        "evidence": [
+          "Reduced tacrolimus and cyclosporine metabolism",
+          "May require dose adjustment"
+        ],
+        "drugs": [
+          "tacrolimus",
+          "cyclosporine"
+        ]
+      }
+    },
+    "single_tags": {
+      "CYP2D6_loss": {
+        "weight": 0.3,
+        "evidence": [
+          "Complete loss of CYP2D6 function affects ~7% of Caucasians",
+          "Critical for codeine, tramadol, and many antidepressants"
+        ]
+      },
+      "CYP2D6_reduced": {
+        "weight": 0.15,
+        "evidence": [
+          "Intermediate metabolizer status",
+          "May require dose adjustment for CYP2D6 substrates"
+        ]
+      },
+      "CYP2C19_loss": {
+        "weight": 0.28,
+        "evidence": [
+          "Poor metabolizer phenotype for clopidogrel and PPIs",
+          "FDA boxed warning for clopidogrel in poor metabolizers"
+        ]
+      },
+      "CYP2C19_reduced": {
+        "weight": 0.14,
+        "evidence": [
+          "Intermediate metabolizer status",
+          "Reduced activation of prodrugs"
+        ]
+      },
+      "CYP2C19_ultrarapid": {
+        "weight": 0.1,
+        "evidence": [
+          "Increased metabolism may reduce efficacy of some drugs",
+          "May require higher doses of PPIs"
+        ]
+      },
+      "CYP3A4_rs776746_TT": {
+        "weight": 0.18,
+        "evidence": [
+          "Reduced CYP3A4 expression",
+          "Affects many commonly prescribed medications"
+        ]
+      },
+      "CYP3A4_reduced": {
+        "weight": 0.12,
+        "evidence": [
+          "Intermediate CYP3A4 function",
+          "Monitor for drug accumulation"
+        ]
+      },
+      "CYP2C9_loss": {
+        "weight": 0.32,
+        "evidence": [
+          "High warfarin sensitivity",
+          "Increased bleeding risk with standard dosing"
+        ]
+      },
+      "CYP2C9_reduced": {
+        "weight": 0.18,
+        "evidence": [
+          "Intermediate metabolizer for warfarin and NSAIDs",
+          "Dose reduction often required"
+        ]
+      },
+      "VKORC1_low_dose": {
+        "weight": 0.22,
+        "evidence": [
+          "Increased warfarin sensitivity",
+          "Requires lower maintenance dose"
+        ]
+      },
+      "SLCO1B1_reduced": {
+        "weight": 0.25,
+        "evidence": [
+          "Increased statin myopathy risk",
+          "CPIC recommendation: consider alternative or lower dose"
+        ]
+      },
+      "ABCB1_reduced_function": {
+        "weight": 0.1,
+        "evidence": [
+          "Altered drug transport",
+          "May affect bioavailability of many drugs"
+        ]
+      },
+      "TPMT_loss": {
+        "weight": 0.45,
+        "evidence": [
+          "Severe thiopurine toxicity risk",
+          "FDA boxed warning for azathioprine and mercaptopurine"
+        ],
+        "drugs": [
+          "azathioprine",
+          "mercaptopurine"
+        ]
+      },
+      "TPMT_reduced": {
+        "weight": 0.25,
+        "evidence": [
+          "Intermediate thiopurine toxicity risk",
+          "Dose reduction required"
+        ],
+        "drugs": [
+          "azathioprine",
+          "mercaptopurine"
+        ]
+      },
+      "DPYD_loss": {
+        "weight": 0.5,
+        "evidence": [
+          "Severe fluoropyrimidine toxicity risk",
+          "FDA recommendation for DPYD testing"
+        ],
+        "drugs": [
+          "fluorouracil",
+          "capecitabine"
+        ]
+      },
+      "DPYD_reduced": {
+        "weight": 0.3,
+        "evidence": [
+          "Intermediate fluoropyrimidine toxicity risk",
+          "Dose reduction required"
+        ],
+        "drugs": [
+          "fluorouracil",
+          "capecitabine"
+        ]
+      },
+      "UGT1A1_reduced": {
+        "weight": 0.35,
+        "evidence": [
+          "Increased irinotecan toxicity risk",
+          "FDA recommendation for UGT1A1 testing"
+        ],
+        "drugs": [
+          "irinotecan"
+        ]
+      },
+      "HLA-B_risk": {
+        "weight": 0.4,
+        "evidence": [
+          "HLA-B*5701 allele associated with severe hypersensitivity",
+          "FDA boxed warning for abacavir, carbamazepine, allopurinol"
+        ],
+        "drugs": [
+          "abacavir",
+          "carbamazepine",
+          "allopurinol"
+        ]
+      },
+      "CYP1A2_reduced": {
+        "weight": 0.15,
+        "evidence": [
+          "Reduced caffeine and theophylline metabolism",
+          "May require dose adjustment"
+        ],
+        "drugs": [
+          "caffeine",
+          "theophylline",
+          "clozapine",
+          "amitriptyline"
+        ]
+      },
+      "CYP2B6_reduced": {
+        "weight": 0.2,
+        "evidence": [
+          "Reduced methadone and efavirenz metabolism",
+          "May require dose adjustment"
+        ],
+        "drugs": [
+          "methadone",
+          "propofol"
+        ]
+      },
+      "COMT_reduced": {
+        "weight": 0.1,
+        "evidence": [
+          "Altered catecholamine metabolism",
+          "May affect response to certain medications"
+        ],
+        "drugs": [
+          "levodopa"
+        ]
+      },
+      "SLC6A4_reduced": {
+        "weight": 0.08,
+        "evidence": [
+          "Altered serotonin transporter function",
+          "May affect SSRI response"
+        ],
+        "drugs": [
+          "fluoxetine",
+          "sertraline"
+        ]
+      }
+    },
+    "pathway_burden": {
+      "weight": 0.25,
+      "evidence": [
+        "Multiple gene impairment in same pathway indicates higher risk",
+        "Redundancy loss increases susceptibility to adverse events"
+      ]
+    },
+    "clinical_guidelines": {
+      "fda_boxed_warnings": [
+        "CYP2D6 poor metabolizers: codeine contraindicated in children",
+        "CYP2C19 poor metabolizers: clopidogrel may be less effective",
+        "TPMT poor metabolizers: azathioprine/mercaptopurine contraindicated",
+        "HLA-B*5701 positive: abacavir contraindicated",
+        "HLA-B*5701 positive: carbamazepine contraindicated"
+      ],
+      "cpic_recommendations": [
+        "CYP2D6 poor metabolizers: avoid codeine, consider morphine",
+        "CYP2C19 poor metabolizers: consider prasugrel or ticagrelor",
+        "CYP2C9 poor metabolizers: reduce warfarin dose by 25-50%",
+        "SLCO1B1*5 carriers: reduce simvastatin dose or use alternative",
+        "TPMT poor metabolizers: reduce thiopurine dose by 90%"
+      ],
+      "pharmgkb_levels": {
+        "level_1a": "High evidence, clinical action recommended",
+        "level_1b": "Moderate evidence, clinical action recommended",
+        "level_2a": "Moderate evidence, clinical action suggested",
+        "level_2b": "Low evidence, clinical action suggested",
+        "level_3": "Low evidence, clinical action optional"
+      }
+    }
+  },
+  "metadata": {
+    "version": "comprehensive-1.0.0",
+    "created": "2024-01-04",
+    "sources": [
+      "existing",
+      "pharmgkb",
+      "cpic",
+      "fda",
+      "comprehensive"
+    ],
+    "description": "Comprehensive pharmacogenomic knowledge base for Epi-Risk Lite",
+    "statistics": {
+      "drugs": 34,
+      "genes": 26,
+      "variants": 88,
+      "star_alleles": 181,
+      "alternatives": 25,
+      "single_tags": 22,
+      "epistasis_pairs": 10
+    }
+  }
+}

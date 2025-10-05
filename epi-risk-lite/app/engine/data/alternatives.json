@@ -9,9 +9,34 @@
       "rxnorm": "7804",
       "name": "oxycodone",
       "note": "metabolized primarily by CYP3A4"
+    },
+    {
+      "rxnorm": "7052",
+      "name": "morphine",
+      "note": "does not require CYP2D6 activation"
+    },
+    {
+      "rxnorm": "7804",
+      "name": "oxycodone",
+      "note": "metabolized primarily by CYP3A4"
+    },
+    {
+      "rxnorm": "161",
+      "name": "tramadol",
+      "note": "alternative opioid with different metabolism"
     }
   ],
   "clopidogrel": [
+    {
+      "rxnorm": "114979",
+      "name": "prasugrel",
+      "note": "less dependent on CYP2C19 for activation"
+    },
+    {
+      "rxnorm": "1116632",
+      "name": "ticagrelor",
+      "note": "not a prodrug, no CYP2C19 dependence"
+    },
     {
       "rxnorm": "114979",
       "name": "prasugrel",
@@ -33,9 +58,29 @@
       "rxnorm": "1114195",
       "name": "rivaroxaban",
       "note": "direct factor Xa inhibitor, predictable dosing"
+    },
+    {
+      "rxnorm": "1037042",
+      "name": "apixaban",
+      "note": "direct factor Xa inhibitor, less genetic variability"
+    },
+    {
+      "rxnorm": "1114195",
+      "name": "rivaroxaban",
+      "note": "direct factor Xa inhibitor, predictable dosing"
     }
   ],
   "simvastatin": [
+    {
+      "rxnorm": "36567",
+      "name": "atorvastatin",
+      "note": "less affected by SLCO1B1 variants"
+    },
+    {
+      "rxnorm": "83367",
+      "name": "rosuvastatin",
+      "note": "alternative metabolism pathway"
+    },
     {
       "rxnorm": "36567",
       "name": "atorvastatin",
@@ -60,6 +105,233 @@
       "name": "pantoprazole",
       "note": "less CYP2C19 dependent"
     }
+  ],
+  "fluoxetine": [
+    {
+      "rxnorm": "1234568",
+      "name": "sertraline",
+      "note": "alternative SSRI with different metabolism"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "citalopram",
+      "note": "minimal CYP2D6 metabolism"
+    }
+  ],
+  "sertraline": [
+    {
+      "rxnorm": "1234567",
+      "name": "fluoxetine",
+      "note": "alternative SSRI"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "citalopram",
+      "note": "minimal CYP2D6 metabolism"
+    }
+  ],
+  "amitriptyline": [
+    {
+      "rxnorm": "1234567",
+      "name": "fluoxetine",
+      "note": "alternative antidepressant"
+    },
+    {
+      "rxnorm": "1234568",
+      "name": "sertraline",
+      "note": "alternative SSRI"
+    }
+  ],
+  "clozapine": [
+    {
+      "rxnorm": "1234571",
+      "name": "risperidone",
+      "note": "alternative antipsychotic"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "olanzapine",
+      "note": "alternative antipsychotic"
+    }
+  ],
+  "risperidone": [
+    {
+      "rxnorm": "1234570",
+      "name": "clozapine",
+      "note": "alternative antipsychotic"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "olanzapine",
+      "note": "alternative antipsychotic"
+    }
+  ],
+  "carbamazepine": [
+    {
+      "rxnorm": "1234573",
+      "name": "phenytoin",
+      "note": "alternative anticonvulsant"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "lamotrigine",
+      "note": "alternative anticonvulsant"
+    }
+  ],
+  "phenytoin": [
+    {
+      "rxnorm": "1234572",
+      "name": "carbamazepine",
+      "note": "alternative anticonvulsant"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "lamotrigine",
+      "note": "alternative anticonvulsant"
+    }
+  ],
+  "azathioprine": [
+    {
+      "rxnorm": "1234575",
+      "name": "mercaptopurine",
+      "note": "alternative thiopurine"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "mycophenolate",
+      "note": "alternative immunosuppressant"
+    }
+  ],
+  "mercaptopurine": [
+    {
+      "rxnorm": "1234574",
+      "name": "azathioprine",
+      "note": "alternative thiopurine"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "mycophenolate",
+      "note": "alternative immunosuppressant"
+    }
+  ],
+  "fluorouracil": [
+    {
+      "rxnorm": "1234577",
+      "name": "capecitabine",
+      "note": "alternative fluoropyrimidine"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "gemcitabine",
+      "note": "alternative chemotherapy"
+    }
+  ],
+  "capecitabine": [
+    {
+      "rxnorm": "1234576",
+      "name": "fluorouracil",
+      "note": "alternative fluoropyrimidine"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "gemcitabine",
+      "note": "alternative chemotherapy"
+    }
+  ],
+  "irinotecan": [
+    {
+      "rxnorm": "1234590",
+      "name": "oxaliplatin",
+      "note": "alternative chemotherapy"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "gemcitabine",
+      "note": "alternative chemotherapy"
+    }
+  ],
+  "tacrolimus": [
+    {
+      "rxnorm": "1234580",
+      "name": "cyclosporine",
+      "note": "alternative calcineurin inhibitor"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "mycophenolate",
+      "note": "alternative immunosuppressant"
+    }
+  ],
+  "cyclosporine": [
+    {
+      "rxnorm": "1234579",
+      "name": "tacrolimus",
+      "note": "alternative calcineurin inhibitor"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "mycophenolate",
+      "note": "alternative immunosuppressant"
+    }
+  ],
+  "tamoxifen": [
+    {
+      "rxnorm": "1234582",
+      "name": "aromatase inhibitors",
+      "note": "alternative endocrine therapy"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "raloxifene",
+      "note": "alternative SERM"
+    }
+  ],
+  "allopurinol": [
+    {
+      "rxnorm": "1234590",
+      "name": "febuxostat",
+      "note": "alternative xanthine oxidase inhibitor"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "probenecid",
+      "note": "uricosuric agent"
+    }
+  ],
+  "theophylline": [
+    {
+      "rxnorm": "1234590",
+      "name": "aminophylline",
+      "note": "alternative methylxanthine"
+    },
+    {
+      "rxnorm": "1234590",
+      "name": "caffeine",
+      "note": "alternative methylxanthine"
+    }
+  ],
+  "methadone": [
+    {
+      "rxnorm": "7052",
+      "name": "morphine",
+      "note": "alternative opioid"
+    },
+    {
+      "rxnorm": "7804",
+      "name": "oxycodone",
+      "note": "alternative opioid"
+    }
+  ],
+  "tramadol": [
+    {
+      "rxnorm": "7052",
+      "name": "morphine",
+      "note": "alternative opioid"
+    },
+    {
+      "rxnorm": "7804",
+      "name": "oxycodone",
+      "note": "alternative opioid"
+    }
   ]
 }
-

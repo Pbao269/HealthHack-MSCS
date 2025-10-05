@@ -1,31 +1,439 @@
 {
   "rxnorm:1049630": {
     "name": "codeine",
-    "genes": ["CYP2D6", "CYP3A4", "UGT2B7"]
+    "genes": [
+      "CYP2D6",
+      "CYP3A4",
+      "UGT2B7"
+    ],
+    "sources": [
+      "existing",
+      "pharmgkb"
+    ]
   },
   "rxnorm:32968": {
     "name": "clopidogrel",
-    "genes": ["CYP2C19", "CYP3A4", "ABCB1"]
+    "genes": [
+      "CYP2C19",
+      "CYP3A4",
+      "ABCB1"
+    ],
+    "sources": [
+      "cpic",
+      "existing",
+      "pharmgkb"
+    ]
   },
   "rxnorm:11289": {
     "name": "warfarin",
-    "genes": ["CYP2C9", "VKORC1", "CYP4F2"]
+    "genes": [
+      "CYP2C9",
+      "VKORC1",
+      "CYP4F2"
+    ],
+    "sources": [
+      "cpic",
+      "existing",
+      "pharmgkb"
+    ]
   },
   "rxnorm:42331": {
     "name": "simvastatin",
-    "genes": ["SLCO1B1", "CYP3A4", "CYP3A5", "ABCB1"]
+    "genes": [
+      "SLCO1B1",
+      "CYP3A4",
+      "CYP3A5",
+      "ABCB1"
+    ],
+    "sources": [
+      "cpic",
+      "existing",
+      "pharmgkb"
+    ]
   },
   "rxnorm:7052": {
     "name": "morphine",
-    "genes": ["UGT2B7", "OPRM1"]
+    "genes": [
+      "UGT2B7",
+      "OPRM1"
+    ],
+    "sources": [
+      "existing",
+      "pharmgkb"
+    ]
   },
   "rxnorm:6809": {
     "name": "metoprolol",
-    "genes": ["CYP2D6", "ADRB1"]
+    "genes": [
+      "CYP2D6",
+      "ADRB1"
+    ],
+    "sources": [
+      "existing",
+      "pharmgkb"
+    ]
   },
   "rxnorm:8123": {
     "name": "omeprazole",
-    "genes": ["CYP2C19", "CYP3A4"]
+    "genes": [
+      "CYP2C19",
+      "CYP3A4"
+    ],
+    "sources": [
+      "existing",
+      "pharmgkb"
+    ]
+  },
+  "rxnorm:1596450": {
+    "name": "abacavir",
+    "genes": [
+      "HLA-B"
+    ],
+    "sources": [
+      "fda",
+      "existing",
+      "pharmgkb"
+    ]
+  },
+  "rxnorm:1234567": {
+    "name": "fluoxetine",
+    "genes": [
+      "CYP2D6",
+      "CYP2C19",
+      "SLC6A4"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234568": {
+    "name": "sertraline",
+    "genes": [
+      "CYP2C19",
+      "CYP2D6",
+      "SLC6A4"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234569": {
+    "name": "amitriptyline",
+    "genes": [
+      "CYP2D6",
+      "CYP2C19",
+      "CYP1A2"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234570": {
+    "name": "clozapine",
+    "genes": [
+      "CYP1A2",
+      "CYP2D6",
+      "CYP3A4"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234571": {
+    "name": "risperidone",
+    "genes": [
+      "CYP2D6",
+      "CYP3A4",
+      "DRD2"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234572": {
+    "name": "carbamazepine",
+    "genes": [
+      "HLA-B",
+      "CYP3A4",
+      "CYP2C19"
+    ],
+    "sources": [
+      "pharmgkb",
+      "fda"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "boxed_warning"
+  },
+  "rxnorm:1234573": {
+    "name": "phenytoin",
+    "genes": [
+      "CYP2C9",
+      "CYP2C19",
+      "HLA-B"
+    ],
+    "sources": [
+      "pharmgkb",
+      "fda"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234574": {
+    "name": "azathioprine",
+    "genes": [
+      "TPMT",
+      "NUDT15"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic",
+      "fda"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "boxed_warning"
+  },
+  "rxnorm:1234575": {
+    "name": "mercaptopurine",
+    "genes": [
+      "TPMT",
+      "NUDT15"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic",
+      "fda"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "boxed_warning"
+  },
+  "rxnorm:1234576": {
+    "name": "fluorouracil",
+    "genes": [
+      "DPYD",
+      "TYMS"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic",
+      "fda"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234577": {
+    "name": "capecitabine",
+    "genes": [
+      "DPYD",
+      "TYMS"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic",
+      "fda"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234578": {
+    "name": "irinotecan",
+    "genes": [
+      "UGT1A1",
+      "CYP3A4"
+    ],
+    "sources": [
+      "pharmgkb",
+      "fda"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234579": {
+    "name": "tacrolimus",
+    "genes": [
+      "CYP3A4",
+      "CYP3A5",
+      "ABCB1"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234580": {
+    "name": "cyclosporine",
+    "genes": [
+      "CYP3A4",
+      "CYP3A5",
+      "ABCB1"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234581": {
+    "name": "tamoxifen",
+    "genes": [
+      "CYP2D6",
+      "CYP3A4",
+      "CYP2C19"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234582": {
+    "name": "aromatase inhibitors",
+    "genes": [
+      "CYP19A1",
+      "CYP3A4"
+    ],
+    "sources": [
+      "pharmgkb"
+    ],
+    "clinical_importance": "moderate"
+  },
+  "rxnorm:1234583": {
+    "name": "allopurinol",
+    "genes": [
+      "HLA-B",
+      "CYP2C9"
+    ],
+    "sources": [
+      "pharmgkb",
+      "fda"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "boxed_warning"
+  },
+  "rxnorm:1234584": {
+    "name": "caffeine",
+    "genes": [
+      "CYP1A2",
+      "ADORA2A"
+    ],
+    "sources": [
+      "pharmgkb"
+    ],
+    "clinical_importance": "moderate"
+  },
+  "rxnorm:1234585": {
+    "name": "theophylline",
+    "genes": [
+      "CYP1A2",
+      "CYP2E1"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234586": {
+    "name": "propranolol",
+    "genes": [
+      "CYP2D6",
+      "CYP1A2",
+      "ADRB1"
+    ],
+    "sources": [
+      "pharmgkb"
+    ],
+    "clinical_importance": "moderate"
+  },
+  "rxnorm:1234587": {
+    "name": "lidocaine",
+    "genes": [
+      "CYP1A2",
+      "CYP3A4"
+    ],
+    "sources": [
+      "pharmgkb"
+    ],
+    "clinical_importance": "moderate"
+  },
+  "rxnorm:1234588": {
+    "name": "propofol",
+    "genes": [
+      "CYP2B6",
+      "UGT1A9"
+    ],
+    "sources": [
+      "pharmgkb"
+    ],
+    "clinical_importance": "moderate"
+  },
+  "rxnorm:1234589": {
+    "name": "midazolam",
+    "genes": [
+      "CYP3A4",
+      "CYP3A5"
+    ],
+    "sources": [
+      "pharmgkb"
+    ],
+    "clinical_importance": "moderate"
+  },
+  "rxnorm:1234590": {
+    "name": "fentanyl",
+    "genes": [
+      "CYP3A4",
+      "OPRM1"
+    ],
+    "sources": [
+      "pharmgkb"
+    ],
+    "clinical_importance": "moderate"
+  },
+  "rxnorm:1234591": {
+    "name": "methadone",
+    "genes": [
+      "CYP2B6",
+      "CYP3A4",
+      "CYP2D6"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
+  },
+  "rxnorm:1234592": {
+    "name": "tramadol",
+    "genes": [
+      "CYP2D6",
+      "CYP3A4",
+      "OPRM1"
+    ],
+    "sources": [
+      "pharmgkb",
+      "cpic"
+    ],
+    "clinical_importance": "high",
+    "fda_labeling": "pharmacogenomic"
   }
 }
-

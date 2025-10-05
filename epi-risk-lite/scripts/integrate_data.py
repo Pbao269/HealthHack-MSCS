@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 class DataIntegrator:
     """Integrates data from multiple pharmacogenomics sources."""
     
-    def __init__(self, data_dir: Path = Path("epi-risk-lite/app/engine/data")):
+    def __init__(self, data_dir: Path = Path("app/engine/data")):
         self.data_dir = data_dir
         self.output_dir = data_dir
         

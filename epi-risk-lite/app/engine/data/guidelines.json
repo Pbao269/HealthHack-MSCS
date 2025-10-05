@@ -6,7 +6,9 @@
         "Combined CYP2D6 and CYP3A4 impairment severely reduces codeine activation",
         "PharmGKB Level 1A: Poor metabolizers at high risk for treatment failure"
       ],
-      "drugs": ["codeine"]
+      "drugs": [
+        "codeine"
+      ]
     },
     "CYP2D6_loss+CYP3A4_reduced": {
       "weight": 0.35,
@@ -14,23 +16,29 @@
         "Dual pathway impairment increases risk of inadequate analgesia",
         "Consider alternative opioid or dose adjustment"
       ],
-      "drugs": ["codeine"]
+      "drugs": [
+        "codeine"
+      ]
     },
     "CYP2C19_loss+CYP3A4_reduced": {
-      "weight": 0.40,
+      "weight": 0.4,
       "evidence": [
         "Clopidogrel activation significantly impaired with dual enzyme deficiency",
         "FDA boxed warning for poor CYP2C19 metabolizers"
       ],
-      "drugs": ["clopidogrel"]
+      "drugs": [
+        "clopidogrel"
+      ]
     },
     "CYP2C9_loss+VKORC1_low_dose": {
-      "weight": 0.50,
+      "weight": 0.5,
       "evidence": [
         "Warfarin sensitivity markedly increased; high bleeding risk",
         "Requires substantial dose reduction per CPIC guidelines"
       ],
-      "drugs": ["warfarin"]
+      "drugs": [
+        "warfarin"
+      ]
     },
     "SLCO1B1_reduced+CYP3A4_reduced": {
       "weight": 0.38,
@@ -38,12 +46,67 @@
         "Increased simvastatin exposure and myopathy risk",
         "Consider lower dose or alternative statin"
       ],
-      "drugs": ["simvastatin"]
+      "drugs": [
+        "simvastatin"
+      ]
+    },
+    "TPMT_loss+NUDT15_loss": {
+      "weight": 0.6,
+      "evidence": [
+        "Severe thiopurine toxicity risk with dual enzyme deficiency",
+        "Consider alternative immunosuppressant"
+      ],
+      "drugs": [
+        "azathioprine",
+        "mercaptopurine"
+      ]
+    },
+    "DPYD_loss+TYMS_reduced": {
+      "weight": 0.65,
+      "evidence": [
+        "Severe fluoropyrimidine toxicity risk",
+        "Consider alternative chemotherapy"
+      ],
+      "drugs": [
+        "fluorouracil",
+        "capecitabine"
+      ]
+    },
+    "UGT1A1_reduced+CYP3A4_reduced": {
+      "weight": 0.5,
+      "evidence": [
+        "Increased irinotecan toxicity risk",
+        "Consider dose reduction or alternative"
+      ],
+      "drugs": [
+        "irinotecan"
+      ]
+    },
+    "CYP2D6_loss+CYP1A2_reduced": {
+      "weight": 0.35,
+      "evidence": [
+        "Dual pathway impairment for clozapine metabolism",
+        "May require dose adjustment"
+      ],
+      "drugs": [
+        "clozapine"
+      ]
+    },
+    "CYP3A4_reduced+CYP3A5_loss": {
+      "weight": 0.3,
+      "evidence": [
+        "Reduced tacrolimus and cyclosporine metabolism",
+        "May require dose adjustment"
+      ],
+      "drugs": [
+        "tacrolimus",
+        "cyclosporine"
+      ]
     }
   },
   "single_tags": {
     "CYP2D6_loss": {
-      "weight": 0.30,
+      "weight": 0.3,
       "evidence": [
         "Complete loss of CYP2D6 function affects ~7% of Caucasians",
         "Critical for codeine, tramadol, and many antidepressants"
@@ -71,7 +134,7 @@
       ]
     },
     "CYP2C19_ultrarapid": {
-      "weight": 0.10,
+      "weight": 0.1,
       "evidence": [
         "Increased metabolism may reduce efficacy of some drugs",
         "May require higher doses of PPIs"
@@ -120,19 +183,152 @@
       ]
     },
     "ABCB1_reduced_function": {
-      "weight": 0.10,
+      "weight": 0.1,
       "evidence": [
         "Altered drug transport",
         "May affect bioavailability of many drugs"
       ]
+    },
+    "TPMT_loss": {
+      "weight": 0.45,
+      "evidence": [
+        "Severe thiopurine toxicity risk",
+        "FDA boxed warning for azathioprine and mercaptopurine"
+      ],
+      "drugs": [
+        "azathioprine",
+        "mercaptopurine"
+      ]
+    },
+    "TPMT_reduced": {
+      "weight": 0.25,
+      "evidence": [
+        "Intermediate thiopurine toxicity risk",
+        "Dose reduction required"
+      ],
+      "drugs": [
+        "azathioprine",
+        "mercaptopurine"
+      ]
+    },
+    "DPYD_loss": {
+      "weight": 0.5,
+      "evidence": [
+        "Severe fluoropyrimidine toxicity risk",
+        "FDA recommendation for DPYD testing"
+      ],
+      "drugs": [
+        "fluorouracil",
+        "capecitabine"
+      ]
+    },
+    "DPYD_reduced": {
+      "weight": 0.3,
+      "evidence": [
+        "Intermediate fluoropyrimidine toxicity risk",
+        "Dose reduction required"
+      ],
+      "drugs": [
+        "fluorouracil",
+        "capecitabine"
+      ]
+    },
+    "UGT1A1_reduced": {
+      "weight": 0.35,
+      "evidence": [
+        "Increased irinotecan toxicity risk",
+        "FDA recommendation for UGT1A1 testing"
+      ],
+      "drugs": [
+        "irinotecan"
+      ]
+    },
+    "HLA-B_risk": {
+      "weight": 0.4,
+      "evidence": [
+        "HLA-B*5701 allele associated with severe hypersensitivity",
+        "FDA boxed warning for abacavir, carbamazepine, allopurinol"
+      ],
+      "drugs": [
+        "abacavir",
+        "carbamazepine",
+        "allopurinol"
+      ]
+    },
+    "CYP1A2_reduced": {
+      "weight": 0.15,
+      "evidence": [
+        "Reduced caffeine and theophylline metabolism",
+        "May require dose adjustment"
+      ],
+      "drugs": [
+        "caffeine",
+        "theophylline",
+        "clozapine",
+        "amitriptyline"
+      ]
+    },
+    "CYP2B6_reduced": {
+      "weight": 0.2,
+      "evidence": [
+        "Reduced methadone and efavirenz metabolism",
+        "May require dose adjustment"
+      ],
+      "drugs": [
+        "methadone",
+        "propofol"
+      ]
+    },
+    "COMT_reduced": {
+      "weight": 0.1,
+      "evidence": [
+        "Altered catecholamine metabolism",
+        "May affect response to certain medications"
+      ],
+      "drugs": [
+        "levodopa"
+      ]
+    },
+    "SLC6A4_reduced": {
+      "weight": 0.08,
+      "evidence": [
+        "Altered serotonin transporter function",
+        "May affect SSRI response"
+      ],
+      "drugs": [
+        "fluoxetine",
+        "sertraline"
+      ]
     }
   },
   "pathway_burden": {
-    "weight": 0.20,
+    "weight": 0.25,
     "evidence": [
       "Multiple gene impairment in same pathway indicates higher risk",
       "Redundancy loss increases susceptibility to adverse events"
     ]
+  },
+  "clinical_guidelines": {
+    "fda_boxed_warnings": [
+      "CYP2D6 poor metabolizers: codeine contraindicated in children",
+      "CYP2C19 poor metabolizers: clopidogrel may be less effective",
+      "TPMT poor metabolizers: azathioprine/mercaptopurine contraindicated",
+      "HLA-B*5701 positive: abacavir contraindicated",
+      "HLA-B*5701 positive: carbamazepine contraindicated"
+    ],
+    "cpic_recommendations": [
+      "CYP2D6 poor metabolizers: avoid codeine, consider morphine",
+      "CYP2C19 poor metabolizers: consider prasugrel or ticagrelor",
+      "CYP2C9 poor metabolizers: reduce warfarin dose by 25-50%",
+      "SLCO1B1*5 carriers: reduce simvastatin dose or use alternative",
+      "TPMT poor metabolizers: reduce thiopurine dose by 90%"
+    ],
+    "pharmgkb_levels": {
+      "level_1a": "High evidence, clinical action recommended",
+      "level_1b": "Moderate evidence, clinical action recommended",
+      "level_2a": "Moderate evidence, clinical action suggested",
+      "level_2b": "Low evidence, clinical action suggested",
+      "level_3": "Low evidence, clinical action optional"
+    }
   }
 }
-

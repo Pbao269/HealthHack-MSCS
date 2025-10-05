@@ -91,41 +91,45 @@ jobs:
         curl -f http://localhost:8000/healthz || exit 1
         docker stop epi-risk-test
 
-  data-collection:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'workflow_dispatch'
-    defaults:
-      run:
-        working-directory: ./epi-risk-lite
-    
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-    
-    - name: Install dependencies
-      run: |
-        pip install -e .
-        pip install -r scripts/requirements.txt
-    
-    - name: Run data collection
-      run: |
-        cd scripts
-        python collect_pharmgkb_data.py
-        python collect_cpic_data.py
-        python collect_fda_data.py
-        python integrate_data.py
-    
-    - name: Upload expanded data
-      uses: actions/upload-artifact@v4
-      with:
-        name: expanded-knowledge-base
-        path: epi-risk-lite/app/engine/data/expanded_*.json
-        retention-days: 30
+  # data-collection:
+  #   runs-on: ubuntu-latest
+  #   if: github.event_name == 'workflow_dispatch'
+  #   defaults:
+  #     run:
+  #       working-directory: ./epi-risk-lite
+  #   
+  #   steps:
+  #   - name: Checkout code
+  #     uses: actions/checkout@v4
+  #   
+  #   - name: Set up Python
+  #     uses: actions/setup-python@v4
+  #     with:
+  #       python-version: '3.11'
+  #   
+  #   - name: Install dependencies
+  #     run: |
+  #       pip install -e .
+  #       pip install -r scripts/requirements.txt
+  #   
+  #   - name: Run data collection
+  #     run: |
+  #       cd scripts
+  #       python collect_pharmgkb_data.py
+  #       python collect_cpic_data.py
+  #       python collect_fda_data.py
+  #       python integrate_data.py
+  #   
+  #   - name: Upload expanded data
+  #     uses: actions/upload-artifact@v4
+  #     with:
+  #       name: expanded-knowledge-base
+  #       path: epi-risk-lite/app/engine/data/expanded_*.json
+  #       retention-days: 30
+
+  # NOTE: Data collection scripts are disabled due to API authentication issues
+  # and web scraping unreliability. Scripts are kept for reference only.
+  # Current data is comprehensive and manually curated.
 
   security:
     runs-on: ubuntu-latest

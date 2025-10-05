@@ -21,11 +21,11 @@ logger = logging.getLogger(__name__)
 class FDACollector:
     """Collects data from FDA pharmacogenomic biomarkers table."""
     
-    def __init__(self, output_dir: Path = Path("epi-risk-lite/app/engine/data")):
+    def __init__(self, output_dir: Path = Path("app/engine/data")):
         self.output_dir = output_dir
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'Epi-Risk-Lite/1.0 (https://github.com/your-repo/epi-risk-lite)'
+            'User-Agent': 'Epi-Risk-Lite/1.0 (https://github.com/Pbao269/HealthHack-MSCS)'
         })
     
     def get_fda_biomarkers_table(self) -> List[Dict]:
