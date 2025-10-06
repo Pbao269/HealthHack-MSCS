@@ -2,6 +2,8 @@
 
 A comprehensive clinical decision support platform for healthcare professionals, designed to improve patient care through evidence-based decision making and personalized medicine.
 
+Demo: https://www.youtube.com/watch?v=BRFQOMtIXYw&t=24s
+
 ## 🏥 **Platform Overview**
 
 HealthHack MSCS is a modular clinical support system that provides healthcare professionals with advanced tools for:
