@@ -22,6 +22,7 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
         case_sensitive = False
+        extra = "allow"  # Allow extra fields from environment
 
 
 # Global settings instance
@@ -30,4 +31,3 @@ settings = Settings()
 # Ensure directories exist
 settings.model_dir.mkdir(parents=True, exist_ok=True)
 settings.data_dir.mkdir(parents=True, exist_ok=True)
-

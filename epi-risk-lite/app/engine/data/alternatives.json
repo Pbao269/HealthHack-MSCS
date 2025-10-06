@@ -11,32 +11,12 @@
       "note": "metabolized primarily by CYP3A4"
     },
     {
-      "rxnorm": "7052",
-      "name": "morphine",
-      "note": "does not require CYP2D6 activation"
-    },
-    {
-      "rxnorm": "7804",
-      "name": "oxycodone",
-      "note": "metabolized primarily by CYP3A4"
-    },
-    {
       "rxnorm": "161",
       "name": "tramadol",
       "note": "alternative opioid with different metabolism"
     }
   ],
   "clopidogrel": [
-    {
-      "rxnorm": "114979",
-      "name": "prasugrel",
-      "note": "less dependent on CYP2C19 for activation"
-    },
-    {
-      "rxnorm": "1116632",
-      "name": "ticagrelor",
-      "note": "not a prodrug, no CYP2C19 dependence"
-    },
     {
       "rxnorm": "114979",
       "name": "prasugrel",
@@ -58,29 +38,9 @@
       "rxnorm": "1114195",
       "name": "rivaroxaban",
       "note": "direct factor Xa inhibitor, predictable dosing"
-    },
-    {
-      "rxnorm": "1037042",
-      "name": "apixaban",
-      "note": "direct factor Xa inhibitor, less genetic variability"
-    },
-    {
-      "rxnorm": "1114195",
-      "name": "rivaroxaban",
-      "note": "direct factor Xa inhibitor, predictable dosing"
     }
   ],
   "simvastatin": [
-    {
-      "rxnorm": "36567",
-      "name": "atorvastatin",
-      "note": "less affected by SLCO1B1 variants"
-    },
-    {
-      "rxnorm": "83367",
-      "name": "rosuvastatin",
-      "note": "alternative metabolism pathway"
-    },
     {
       "rxnorm": "36567",
       "name": "atorvastatin",

@@ -149,6 +149,7 @@ async def score_file(
     except HTTPException:
         raise
     except ValueError as e:
+        # Invalid medication/rxnorm → use 400 to match hosted behavior and tests
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         logger.error(f"Error processing file: {e}", exc_info=True)
@@ -186,6 +187,7 @@ async def score_variants(request: ScoreRequest):
     except HTTPException:
         raise
     except ValueError as e:
+        # Invalid medication/rxnorm → use 400 to match hosted behavior and tests
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         logger.error(f"Error scoring variants: {e}", exc_info=True)
