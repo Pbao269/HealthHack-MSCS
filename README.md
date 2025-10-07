@@ -2,7 +2,7 @@
 
 A comprehensive clinical decision support platform for healthcare professionals, designed to improve patient care through evidence-based decision making and personalized medicine.
 
-Demo: https://www.youtube.com/watch?v=BRFQOMtIXYw&t=24s
+Demo: https://www.youtube.com/watch?v=BRFQOMtIXYw
 
 ## 🏥 **Platform Overview**
 
