@@ -20,8 +20,7 @@ HealthHack MSCS is a modular clinical support system that provides healthcare pr
 
 - **Location**: `/epi-risk-lite/`
 - **Purpose**: Screen patient genomic data for harmful epistatic interactions
-- **Technology**: Python, FastAPI, XGBoost, Docker
-- **Status**: ✅ Production Ready
+- **Technology**: Python, FastAPI, XGBoost, Docker, Llama V3.3 (later in the pipeline)
 - **Coverage**: 50+ medications, 50+ genes, 200+ variants
 
 **Key Features**:
